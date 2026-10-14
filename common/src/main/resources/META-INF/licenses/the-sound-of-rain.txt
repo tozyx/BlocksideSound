@@ -1,0 +1,47 @@
+Third-party rain audio attribution
+
+Source project: The Sound of Rain
+Project author: JShep
+Release page: https://modrinth.com/mod/the-sound-of-rain
+Project id: 8GRDQ9XB
+Declared project license: MIT (verified on 2026-10-14).
+The user supplied audio extracted from a release jar. The exact release version
+and original copyright notice were not included in the supplied extraction;
+no copyright year has been invented here.
+
+Selected files: rain_sounds_wood_1..3.ogg, rain_sounds_metal_1..3.ogg,
+rain_sounds_glass_1..3.ogg, rain_sounds_foliage_1..3.ogg,
+rain_sounds_sand_1..3.ogg, rain_sounds_water_1..3.ogg,
+rain_sounds_fabric_1..3.ogg, rain_sounds_droplet_1..3.ogg.
+Processed into short mono cues with fades and Vorbis re-encoding.
+The exact original names, hashes, author comments and crop positions are in
+META-INF/licenses/blocksidesound-rain-audio-manifest.json.
+
+Original recording comments include:
+Ivo Vicic — Rain on umbrella (Loop)
+Tomas Herudek — Rain on window ambience
+Other recording author comments are preserved in the manifest.
+The MIT declaration is the upstream project's declaration; separate original
+recording sources have not been verified. These sounds are credited as
+third-party recordings, not recordings by BlocksideSound.
+
+MIT License
+https://opensource.org/license/mit
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.

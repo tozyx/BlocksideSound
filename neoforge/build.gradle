@@ -7,52 +7,35 @@ architectury {
     neoForge()
 }
 
+apply from: rootProject.file('gradle/scripts/platform.gradle')
+
 repositories {
     maven {
         name = 'NeoForge'
         url = 'https://maven.neoforged.net/releases/'
     }
-}
-
-configurations {
-    common
-    shadowCommon
-    compileClasspath.extendsFrom common
-    runtimeClasspath.extendsFrom common
-    developmentNeoForge.extendsFrom common
+    exclusiveContent {
+        forRepository {
+            maven {
+                name = 'Modrinth'
+                url = 'https://api.modrinth.com/maven'
+            }
+        }
+        filter { includeGroup 'maven.modrinth' }
+    }
 }
 
 dependencies {
     neoForge "net.neoforged:neoforge:${rootProject.neoforge_version}"
     common(project(path: ':common', configuration: 'namedElements')) { transitive = false }
     shadowCommon(project(path: ':common', configuration: 'transformProductionNeoForge')) { transitive = false }
-}
 
-processResources {
-    def properties = [version: project.version, minecraft_version: rootProject.minecraft_version,
-                      neoforge_version: rootProject.neoforge_version]
-    inputs.properties properties
-    filesMatching('META-INF/neoforge.mods.toml') { expand properties }
-}
-
-shadowJar {
-    exclude 'architectury.common.json'
-    configurations = [project.configurations.shadowCommon]
-    archiveClassifier = 'dev-shadow'
-}
-
-remapJar {
-    dependsOn shadowJar
-    inputFile.set shadowJar.archiveFile
-    archiveClassifier = null
-}
-
-jar {
-    archiveClassifier = 'dev'
-}
-
-sourcesJar {
-    def commonSources = project(':common').tasks.named('sourcesJar')
-    dependsOn commonSources
-    from commonSources.flatMap { it.archiveFile }.map { zipTree(it) }
+    // Local development runtime only: https://modrinth.com/mod/better-modlist
+    if (rootProject.enable_dev_mods.toBoolean()) {
+        // Already uses Mojang names. Keep the original jar so its Jar-in-Jar
+        // metadata survives; Loom's mod remapping strips that metadata.
+        localRuntime('maven.modrinth:better-modlist:21.1.4') {
+            transitive = false
+        }
+    }
 }

@@ -7,45 +7,24 @@ architectury {
     fabric()
 }
 
-configurations {
-    common
-    shadowCommon
-    compileClasspath.extendsFrom common
-    runtimeClasspath.extendsFrom common
-    developmentFabric.extendsFrom common
+apply from: rootProject.file('gradle/scripts/platform.gradle')
+
+repositories {
+    maven {
+        name = 'TerraformersMC'
+        url = 'https://maven.terraformersmc.com/releases/'
+        content { includeGroup 'com.terraformersmc' }
+    }
 }
 
 dependencies {
     modImplementation "net.fabricmc:fabric-loader:${rootProject.fabric_loader_version}"
     common(project(path: ':common', configuration: 'namedElements')) { transitive = false }
     shadowCommon(project(path: ':common', configuration: 'transformProductionFabric')) { transitive = false }
-}
 
-processResources {
-    def properties = [version: project.version, minecraft_version: rootProject.minecraft_version,
-                      fabric_loader_min_version: rootProject.fabric_loader_min_version]
-    inputs.properties properties
-    filesMatching('fabric.mod.json') { expand properties }
-}
-
-shadowJar {
-    exclude 'architectury.common.json'
-    configurations = [project.configurations.shadowCommon]
-    archiveClassifier = 'dev-shadow'
-}
-
-remapJar {
-    dependsOn shadowJar
-    inputFile.set shadowJar.archiveFile
-    archiveClassifier = null
-}
-
-jar {
-    archiveClassifier = 'dev'
-}
-
-sourcesJar {
-    def commonSources = project(':common').tasks.named('sourcesJar')
-    dependsOn commonSources
-    from commonSources.flatMap { it.archiveFile }.map { zipTree(it) }
+    // Local development runtime only: no compile API, publication or jar inclusion.
+    if (rootProject.enable_dev_mods.toBoolean()) {
+        modLocalRuntime 'com.terraformersmc:modmenu:11.0.3'
+        modLocalRuntime 'net.fabricmc.fabric-api:fabric-api:0.116.6+1.21.1'
+    }
 }

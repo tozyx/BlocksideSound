@@ -1,0 +1,162 @@
+{
+  "rain.wood": {
+    "subtitle": "subtitles.blocksidesound.rain.wood",
+    "sounds": [
+      {
+        "name": "blocksidesound:rain/wood_01",
+        "volume": 0.55,
+        "attenuation_distance": 16
+      },
+      {
+        "name": "blocksidesound:rain/wood_02",
+        "volume": 0.55,
+        "attenuation_distance": 16
+      },
+      {
+        "name": "blocksidesound:rain/wood_03",
+        "volume": 0.55,
+        "attenuation_distance": 16
+      }
+    ]
+  },
+  "rain.metal": {
+    "subtitle": "subtitles.blocksidesound.rain.metal",
+    "sounds": [
+      {
+        "name": "blocksidesound:rain/metal_01",
+        "volume": 0.45,
+        "attenuation_distance": 16
+      },
+      {
+        "name": "blocksidesound:rain/metal_02",
+        "volume": 0.45,
+        "attenuation_distance": 16
+      },
+      {
+        "name": "blocksidesound:rain/metal_03",
+        "volume": 0.45,
+        "attenuation_distance": 16
+      }
+    ]
+  },
+  "rain.glass": {
+    "subtitle": "subtitles.blocksidesound.rain.glass",
+    "sounds": [
+      {
+        "name": "blocksidesound:rain/glass_01",
+        "volume": 0.4,
+        "attenuation_distance": 16
+      },
+      {
+        "name": "blocksidesound:rain/glass_02",
+        "volume": 0.4,
+        "attenuation_distance": 16
+      },
+      {
+        "name": "blocksidesound:rain/glass_03",
+        "volume": 0.4,
+        "attenuation_distance": 16
+      }
+    ]
+  },
+  "rain.foliage": {
+    "subtitle": "subtitles.blocksidesound.rain.foliage",
+    "sounds": [
+      {
+        "name": "blocksidesound:rain/foliage_01",
+        "volume": 0.3,
+        "attenuation_distance": 16
+      },
+      {
+        "name": "blocksidesound:rain/foliage_02",
+        "volume": 0.3,
+        "attenuation_distance": 16
+      },
+      {
+        "name": "blocksidesound:rain/foliage_03",
+        "volume": 0.3,
+        "attenuation_distance": 16
+      }
+    ]
+  },
+  "rain.granular": {
+    "subtitle": "subtitles.blocksidesound.rain.granular",
+    "sounds": [
+      {
+        "name": "blocksidesound:rain/granular_01",
+        "volume": 0.45,
+        "attenuation_distance": 16
+      },
+      {
+        "name": "blocksidesound:rain/granular_02",
+        "volume": 0.45,
+        "attenuation_distance": 16
+      },
+      {
+        "name": "blocksidesound:rain/granular_03",
+        "volume": 0.45,
+        "attenuation_distance": 16
+      }
+    ]
+  },
+  "rain.water": {
+    "subtitle": "subtitles.blocksidesound.rain.water",
+    "sounds": [
+      {
+        "name": "blocksidesound:rain/water_01",
+        "volume": 0.4,
+        "attenuation_distance": 16
+      },
+      {
+        "name": "blocksidesound:rain/water_02",
+        "volume": 0.4,
+        "attenuation_distance": 16
+      },
+      {
+        "name": "blocksidesound:rain/water_03",
+        "volume": 0.4,
+        "attenuation_distance": 16
+      }
+    ]
+  },
+  "rain.soft": {
+    "subtitle": "subtitles.blocksidesound.rain.soft",
+    "sounds": [
+      {
+        "name": "blocksidesound:rain/soft_01",
+        "volume": 0.35,
+        "attenuation_distance": 16
+      },
+      {
+        "name": "blocksidesound:rain/soft_02",
+        "volume": 0.35,
+        "attenuation_distance": 16
+      },
+      {
+        "name": "blocksidesound:rain/soft_03",
+        "volume": 0.35,
+        "attenuation_distance": 16
+      }
+    ]
+  },
+  "rain.plant_drip": {
+    "subtitle": "subtitles.blocksidesound.rain.plant_drip",
+    "sounds": [
+      {
+        "name": "blocksidesound:rain/plant_drip_01",
+        "volume": 0.55,
+        "attenuation_distance": 16
+      },
+      {
+        "name": "blocksidesound:rain/plant_drip_02",
+        "volume": 0.55,
+        "attenuation_distance": 16
+      },
+      {
+        "name": "blocksidesound:rain/plant_drip_03",
+        "volume": 0.55,
+        "attenuation_distance": 16
+      }
+    ]
+  }
+}

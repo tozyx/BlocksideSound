@@ -19,7 +19,13 @@ $resolvedOneDrive = [System.IO.Path]::GetFullPath($OneDriveRoot)
 if (-not (Test-Path -LiteralPath $resolvedOneDrive -PathType Container)) {
     throw "OneDrive root does not exist: $resolvedOneDrive. Finish OneDrive setup first."
 }
-$cloudContext = Join-Path $resolvedOneDrive 'BlocksideFoley-context'
+$cloudContext = Join-Path $resolvedOneDrive 'BlocksideSound-context'
+$legacyCloudContext = Join-Path $resolvedOneDrive 'BlocksideFoley-context'
+if (-not (Test-Path -LiteralPath $cloudContext) -and
+    (Test-Path -LiteralPath $legacyCloudContext -PathType Container)) {
+    $cloudContext = $legacyCloudContext
+    Write-Output 'Using existing BlocksideFoley-context folder. New installations use BlocksideSound-context.'
+}
 $sourceFolder = if ($Direction -eq 'Export') { $localContext } else { $cloudContext }
 $targetFolder = if ($Direction -eq 'Export') { $cloudContext } else { $localContext }
 
@@ -66,7 +72,7 @@ foreach ($fileName in $fileNames) {
 
 $entryFile = Join-Path $repositoryRoot 'AGENTS.md'
 if ($Direction -eq 'Import' -and -not (Test-Path -LiteralPath $entryFile)) {
-    $entryText = "# Local collaboration entry`n`nRead .collaboration/AGENTS.md and the other three context documents before working.`nPrivate context and this entry are ignored by Git.`n"
+    $entryText = "# Local collaboration entry`n`nRead .collaboration/AGENTS.md and the other three context documents before working.`nCollaboration documents are versioned with this repository; OneDrive is an optional backup.`n"
     [System.IO.File]::WriteAllText($entryFile, $entryText, [System.Text.UTF8Encoding]::new($false))
 }
 Write-Output "$Direction complete: four context files copied to $targetFolder"

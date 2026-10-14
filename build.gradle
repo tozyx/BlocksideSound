@@ -17,6 +17,7 @@ allprojects {
 subprojects {
     apply plugin: 'dev.architectury.loom'
     apply plugin: 'architectury-plugin'
+    apply from: rootProject.file('gradle/scripts/java.gradle')
 
     base {
         archivesName = "${rootProject.archives_name}-${project.name}"
@@ -25,25 +26,6 @@ subprojects {
     dependencies {
         minecraft "net.minecraft:minecraft:${rootProject.minecraft_version}"
         mappings loom.officialMojangMappings()
-    }
-
-    java {
-        toolchain.languageVersion = JavaLanguageVersion.of(21)
-        withSourcesJar()
-    }
-
-    tasks.withType(JavaCompile).configureEach {
-        options.release = 21
-        options.encoding = 'UTF-8'
-    }
-
-    tasks.withType(ProcessResources).configureEach {
-        filteringCharset = 'UTF-8'
-    }
-
-    tasks.withType(AbstractArchiveTask).configureEach {
-        preserveFileTimestamps = false
-        reproducibleFileOrder = true
     }
 }
 

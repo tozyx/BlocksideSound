@@ -16,6 +16,9 @@ work/
 .env.*
 !.env.example
 
-# Private development context; synchronized separately from the code repository.
-/AGENTS.md
-/.collaboration/
+# Collaboration Markdown is versioned; keep only these four shared documents.
+/.collaboration/*
+!/.collaboration/AGENTS.md
+!/.collaboration/design.md
+!/.collaboration/development.md
+!/.collaboration/handoff.md

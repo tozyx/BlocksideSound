@@ -25,7 +25,7 @@ jobs:
       - name: Upload release jars
         uses: actions/upload-artifact@v4
         with:
-          name: blocksidefoley-mc1.21.1
+          name: blocksidesound-mc1.21.1
           path: |
             fabric/build/libs/*.jar
             neoforge/build/libs/*.jar

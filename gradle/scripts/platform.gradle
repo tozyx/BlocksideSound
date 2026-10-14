@@ -1,0 +1,46 @@
+// Shared platform packaging. Only common code/resources are bundled in release jars.
+configurations {
+    common {
+        canBeResolved = true
+        canBeConsumed = false
+    }
+    shadowCommon {
+        canBeResolved = true
+        canBeConsumed = false
+    }
+    compileClasspath.extendsFrom common
+    runtimeClasspath.extendsFrom common
+    named("development${project.name == 'fabric' ? 'Fabric' : 'NeoForge'}") {
+        extendsFrom common
+    }
+}
+
+processResources {
+    def properties = [version: project.version, minecraft_version: rootProject.minecraft_version,
+                      fabric_loader_min_version: rootProject.fabric_loader_min_version,
+                      neoforge_version: rootProject.neoforge_version]
+    inputs.properties properties
+    filesMatching(['fabric.mod.json', 'META-INF/neoforge.mods.toml']) { expand properties }
+}
+
+shadowJar {
+    exclude 'architectury.common.json'
+    configurations = [project.configurations.shadowCommon]
+    archiveClassifier = 'dev-shadow'
+}
+
+remapJar {
+    dependsOn shadowJar
+    inputFile.set shadowJar.archiveFile
+    archiveClassifier = null
+}
+
+jar {
+    archiveClassifier = 'dev'
+}
+
+sourcesJar {
+    def commonSources = project(':common').tasks.named('sourcesJar')
+    dependsOn commonSources
+    from commonSources.flatMap { it.archiveFile }.map { zipTree(it) }
+}

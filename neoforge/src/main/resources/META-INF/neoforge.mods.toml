@@ -1,24 +1,27 @@
 modLoader = "javafml"
 loaderVersion = "[4,)"
 license = "All Rights Reserved"
-issueTrackerURL = "https://github.com/tozyx/BlocksideFoley/issues"
+issueTrackerURL = "https://github.com/tozyx/BlocksideSound/issues"
 
 [[mods]]
-modId = "blocksidefoley"
+modId = "blocksidesound"
 version = "${version}"
-displayName = "Blockside Foley"
+displayName = "BlocksideSound"
 authors = "tozyx"
-displayURL = "https://github.com/tozyx/BlocksideFoley"
+displayURL = "https://github.com/tozyx/BlocksideSound"
 description = '''Material-aware rain and carefully designed sound details for Minecraft.'''
 
-[[dependencies.blocksidefoley]]
+[[mixins]]
+config = "blocksidesound.client.mixins.json"
+
+[[dependencies.blocksidesound]]
 modId = "neoforge"
 type = "required"
 versionRange = "[${neoforge_version},)"
 ordering = "NONE"
 side = "CLIENT"
 
-[[dependencies.blocksidefoley]]
+[[dependencies.blocksidesound]]
 modId = "minecraft"
 type = "required"
 versionRange = "[${minecraft_version}]"

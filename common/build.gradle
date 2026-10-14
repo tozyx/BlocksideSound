@@ -5,4 +5,17 @@ architectury {
 dependencies {
     // Supplies Mixin and environment annotations; shared code must not use Loader APIs.
     modCompileOnly "net.fabricmc:fabric-loader:${rootProject.fabric_loader_version}"
+    testImplementation platform('org.junit:junit-bom:5.11.4')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+    testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+}
+
+repositories {
+    mavenCentral()
+}
+
+tasks.named('test') {
+    useJUnitPlatform()
+    workingDir = layout.buildDirectory.dir('test-run').get().asFile
+    doFirst { workingDir.mkdirs() }
 }
