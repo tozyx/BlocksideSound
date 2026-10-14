@@ -1,0 +1,21 @@
+.gradle/
+**/build/
+**/run/
+**/runs/
+.idea/
+*.iml
+*.ipr
+*.iws
+.vscode/
+.DS_Store
+Thumbs.db
+hs_err_pid*.log
+replay_pid*.log
+work/
+.env
+.env.*
+!.env.example
+
+# Private development context; synchronized separately from the code repository.
+/AGENTS.md
+/.collaboration/

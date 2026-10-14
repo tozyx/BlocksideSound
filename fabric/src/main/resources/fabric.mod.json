@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "id": "blocksidefoley",
+  "version": "${version}",
+  "name": "Blockside Foley",
+  "description": "Material-aware rain and carefully designed sound details for Minecraft.",
+  "authors": ["tozyx"],
+  "contact": {
+    "sources": "https://github.com/tozyx/BlocksideFoley",
+    "issues": "https://github.com/tozyx/BlocksideFoley/issues"
+  },
+  "license": "All Rights Reserved",
+  "environment": "client",
+  "entrypoints": {
+    "client": ["io.github.tozyx.blocksidefoley.fabric.BlocksideFoleyFabricClient"]
+  },
+  "depends": {
+    "fabricloader": ">=${fabric_loader_min_version}",
+    "minecraft": "${minecraft_version}",
+    "java": ">=21"
+  }
+}
