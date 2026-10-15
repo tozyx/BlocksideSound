@@ -17,7 +17,7 @@ import net.minecraft.sounds.SoundSource;
 import net.minecraft.util.RandomSource;
 import net.minecraft.world.phys.Vec3;
 
-/** Only manages this mod's local sounds; vanilla rain remains the background layer. */
+/** Only manages positional material drops; background rain is managed by WeatherPlayer. */
 public final class RainPlayer {
     private final RainPlaybackPlan plan = new RainPlaybackPlan();
     private final List<Active> active = new ArrayList<>();

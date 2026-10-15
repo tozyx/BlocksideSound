@@ -12,6 +12,18 @@ public final class SoundConfig {
     public boolean enabled = true;
     public double volume = 1.0;
     public Rain rain = new Rain();
+    public Weather weather = new Weather();
+
+    /** Background replacements are independent of material drops and their sampler. */
+    public static final class Weather {
+        public Replacement rain = new Replacement();
+        public Replacement thunder = new Replacement();
+    }
+
+    public static final class Replacement {
+        public boolean enabled = true;
+        public double volume = 1.0;
+    }
 
     public static final class Rain {
         public boolean enabled = true;
@@ -59,6 +71,11 @@ public final class SoundConfig {
     public void validate() {
         if (schemaVersion != 1) throw new IllegalArgumentException("Unsupported config schema: " + schemaVersion);
         volume = unit(volume, 1.0);
+        if (weather == null) weather = new Weather();
+        if (weather.rain == null) weather.rain = new Replacement();
+        if (weather.thunder == null) weather.thunder = new Replacement();
+        weather.rain.volume = unit(weather.rain.volume, 1.0);
+        weather.thunder.volume = unit(weather.thunder.volume, 1.0);
         if (rain == null) rain = new Rain();
         rain.volume = unit(rain.volume, 1.0);
         rain.radius = clamp(rain.radius, 4, 32);

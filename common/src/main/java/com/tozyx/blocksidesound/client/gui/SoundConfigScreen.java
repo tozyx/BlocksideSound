@@ -5,6 +5,7 @@ import com.tozyx.blocksidesound.client.BlocksideSoundClient;
 import com.tozyx.blocksidesound.client.config.BlockSelector;
 import com.tozyx.blocksidesound.client.config.SoundConfig;
 import com.tozyx.blocksidesound.client.rain.RainMaterial;
+import com.tozyx.blocksidesound.client.weather.WeatherSoundPolicy;
 import java.io.IOException;
 import java.util.List;
 import java.util.Locale;
@@ -24,7 +25,7 @@ import net.minecraft.network.chat.Component;
 
 /** A shared settings screen built entirely from Minecraft's own widgets. */
 public final class SoundConfigScreen extends Screen {
-    private enum Page { GENERAL, MATERIALS, MATERIAL, ADVANCED, EXCLUSIONS, OVERRIDES }
+    private enum Page { GENERAL, WEATHER, MATERIALS, MATERIAL, ADVANCED, EXCLUSIONS, OVERRIDES }
 
     private final Screen parent;
     private SoundConfig draft = BlocksideSoundClient.configSnapshot();
@@ -43,15 +44,17 @@ public final class SoundConfigScreen extends Screen {
 
     @Override
     protected void init() {
-        int tabWidth = Math.min(116, (width - 32) / 3);
-        int start = (width - tabWidth * 3 - 8) / 2;
+        int tabWidth = Math.min(96, (width - 40) / 4);
+        int start = (width - tabWidth * 4 - 12) / 2;
         tab("general", Page.GENERAL, start, tabWidth);
-        tab("materials", Page.MATERIALS, start + tabWidth + 4, tabWidth);
-        tab("advanced", Page.ADVANCED, start + 2 * (tabWidth + 4), tabWidth);
+        tab("weather", Page.WEATHER, start + tabWidth + 4, tabWidth);
+        tab("materials", Page.MATERIALS, start + 2 * (tabWidth + 4), tabWidth);
+        tab("advanced", Page.ADVANCED, start + 3 * (tabWidth + 4), tabWidth);
 
         settings = addRenderableWidget(new SettingsList(minecraft, width, Math.max(26, height - 134), 68));
         switch (page) {
             case GENERAL -> general();
+            case WEATHER -> weather();
             case MATERIALS -> materials();
             case MATERIAL -> material();
             case ADVANCED -> advanced();
@@ -86,6 +89,27 @@ public final class SoundConfigScreen extends Screen {
         toggle("rain_enabled", draft.rain.enabled, value -> draft.rain.enabled = value);
         percent("rain_volume", draft.rain.volume, value -> draft.rain.volume = value);
         link(text("materials"), () -> navigate(Page.MATERIALS), "materials_help");
+    }
+
+    private void weather() {
+        toggle("replace_rain", draft.weather.rain.enabled, value -> draft.weather.rain.enabled = value);
+        percent("ambience_volume", draft.weather.rain.volume, value -> draft.weather.rain.volume = value);
+        resourceStatus("rain_assets", WeatherSoundPolicy.Event.RAIN, WeatherSoundPolicy.Event.RAIN_ABOVE);
+        toggle("replace_thunder", draft.weather.thunder.enabled, value -> draft.weather.thunder.enabled = value);
+        percent("thunder_volume", draft.weather.thunder.volume, value -> draft.weather.thunder.volume = value);
+        resourceStatus("thunder_assets", WeatherSoundPolicy.Event.THUNDER);
+    }
+
+    private void resourceStatus(String key, WeatherSoundPolicy.Event... events) {
+        int ready = 0;
+        for (WeatherSoundPolicy.Event event : events) {
+            var sound = minecraft.getSoundManager().getSoundEvent(event.replacement());
+            if (sound != null && sound.getWeight() > 0) ready++;
+        }
+        Button label = Button.builder(text(key, ready, events.length), ignored -> {}).width(310).build();
+        label.active = false;
+        label.setTooltip(Tooltip.create(text("weather_assets_help")));
+        settings.add(label);
     }
 
     private void materials() {
@@ -290,7 +314,8 @@ public final class SoundConfigScreen extends Screen {
             default -> text("draft_hint");
         };
         graphics.drawCenteredString(font, subtitle, width / 2, 54, 0xAAAAAA);
-        Component message = status == null ? text("weather_hint") : status;
+        Component message = status != null ? status
+                : text(page == Page.WEATHER ? "weather_setup_hint" : "weather_hint");
         int y = height - 61;
         for (var line : font.split(message, width - 24).stream().limit(2).toList()) {
             graphics.drawCenteredString(font, line, width / 2, y, status == null ? 0xAAAAAA : 0xFF7777);
