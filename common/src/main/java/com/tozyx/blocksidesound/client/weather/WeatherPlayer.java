@@ -2,29 +2,22 @@ package com.tozyx.blocksidesound.client.weather;
 
 import com.tozyx.blocksidesound.client.config.SoundConfig;
 import java.util.ArrayList;
-import java.util.EnumMap;
-import java.util.Iterator;
 import java.util.List;
-import java.util.Map;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.multiplayer.ClientLevel;
 import net.minecraft.client.resources.sounds.SoundInstance;
 import net.minecraft.client.sounds.SoundManager;
-import net.minecraft.core.BlockPos;
+import net.minecraft.core.SectionPos;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.sounds.SoundSource;
-import net.minecraft.world.level.biome.Biome;
-import net.minecraft.world.level.levelgen.Heightmap;
 import net.minecraft.world.phys.Vec3;
 
 /** Owns only replacement weather sounds. The sound-engine hook executes after native delay scheduling. */
 public final class WeatherPlayer {
-    private final Map<WeatherSoundPolicy.Event, Loop> loops = new EnumMap<>(WeatherSoundPolicy.Event.class);
+    private final List<Rain> rain = new ArrayList<>();
     private final List<Thunder> thunder = new ArrayList<>();
     private ClientLevel level;
     private Vec3 previousListener;
-    private WeatherSoundPolicy.Event rainEvent;
-    private float exposure;
     private long ticks;
 
     public void clear(SoundManager sounds) {
@@ -33,14 +26,12 @@ public final class WeatherPlayer {
         thunder.clear();
         level = null;
         previousListener = null;
-        rainEvent = null;
-        exposure = 0;
         ticks = 0;
     }
 
     private void clearRain(SoundManager sounds) {
-        for (Loop loop : loops.values()) sounds.stop(loop.sound());
-        loops.clear();
+        for (Rain playing : rain) sounds.stop(playing.sound());
+        rain.clear();
     }
 
     private void updateWorld(Minecraft minecraft) {
@@ -71,53 +62,8 @@ public final class WeatherPlayer {
             clearRain(sounds);
             return;
         }
-        if (tick % 5 == 0) sampleRain(minecraft);
-        float strength = minecraft.level.getRainLevel(1.0F);
-        Iterator<Map.Entry<WeatherSoundPolicy.Event, Loop>> iterator = loops.entrySet().iterator();
-        while (iterator.hasNext()) {
-            var entry = iterator.next();
-            Loop loop = entry.getValue();
-            if (loop.sound().isStopped() || !available(sounds, entry.getKey().replacement())
-                    || tick - loop.started() > 20 && !sounds.isActive(loop.sound())) {
-                sounds.stop(loop.sound());
-                iterator.remove();
-            } else {
-                loop.sound().target(entry.getKey() == rainEvent ? target(config, strength) : 0);
-            }
-        }
-        if (rainEvent == null || target(config, strength) <= 0 || loops.containsKey(rainEvent)) return;
-        var decision = WeatherSoundPolicy.select(rainEvent.original(), config, id -> available(sounds, id));
-        if (decision.action() != WeatherSoundPolicy.Action.REPLACE) return;
-        BackgroundRainSound sound = new BackgroundRainSound(rainEvent);
-        sound.target(target(config, strength));
-        sounds.play(sound);
-        loops.put(rainEvent, new Loop(sound, tick));
-    }
-
-    private float target(SoundConfig config, float strength) {
-        float shelterGain = rainEvent == WeatherSoundPolicy.Event.RAIN_ABOVE ? 0.35F : 1;
-        return (float) (config.volume * config.weather.rain.volume * strength * exposure * shelterGain);
-    }
-
-    /** Twenty-five loaded heightmap columns every five ticks, independent of material settings. */
-    private void sampleRain(Minecraft minecraft) {
-        ClientLevel world = minecraft.level;
-        BlockPos listener = BlockPos.containing(minecraft.gameRenderer.getMainCamera().getPosition());
-        int wet = 0;
-        for (int dx = -8; dx <= 8; dx += 4) {
-            for (int dz = -8; dz <= 8; dz += 4) {
-                int x = listener.getX() + dx;
-                int z = listener.getZ() + dz;
-                if (!world.hasChunkAt(new BlockPos(x, listener.getY(), z))) continue;
-                int y = world.getHeight(Heightmap.Types.MOTION_BLOCKING, x, z);
-                if (y <= world.getMinBuildHeight() || Math.abs(y - listener.getY()) > 16) continue;
-                BlockPos surface = new BlockPos(x, y, z);
-                if (world.getBiome(surface).value().getPrecipitationAt(surface) == Biome.Precipitation.RAIN) wet++;
-            }
-        }
-        exposure = wet / 25.0F;
-        rainEvent = wet == 0 ? null : world.canSeeSky(listener)
-                ? WeatherSoundPolicy.Event.RAIN : WeatherSoundPolicy.Event.RAIN_ABOVE;
+        rain.removeIf(playing -> tick - playing.started() > 20 && !sounds.isActive(playing.sound()));
+        // Background starts only in replace(), from a genuine native weather.rain / rain.above request.
     }
 
     /** Return true only when this instance has been replaced or deliberately muted. */
@@ -127,8 +73,26 @@ public final class WeatherPlayer {
         var decision = WeatherSoundPolicy.select(original.getLocation(), config, id -> available(sounds, id));
         if (decision.action() == WeatherSoundPolicy.Action.KEEP_ORIGINAL) return false;
         if (decision.action() == WeatherSoundPolicy.Action.MUTE) return true;
-        if (!original.getLocation().equals(WeatherSoundPolicy.Event.THUNDER.original())) return true;
         if (!original.canPlaySound()) return true;
+        if (!original.getLocation().equals(WeatherSoundPolicy.Event.THUNDER.original())) {
+            updateWorld(minecraft);
+            // Vanilla's above check only compares heights. Rain outside a wall can still arrive
+            // as weather.rain: use the filtered profile when the actual path is obstructed.
+            ResourceLocation event = decision.event();
+            if (original.getLocation().equals(WeatherSoundPolicy.Event.RAIN.original())
+                    && rainObstructed(minecraft, original)) {
+                event = WeatherSoundPolicy.Event.RAIN_ABOVE.replacement();
+                if (!available(sounds, event)) return false;
+            }
+            BackgroundRainSound sound = new BackgroundRainSound(original, event, decision.volumeMultiplier());
+            if (sound.resolve(sounds) == null || sound.getSound() == SoundManager.EMPTY_SOUND
+                    || sound.getSound() == SoundManager.INTENTIONALLY_EMPTY_SOUND) return false;
+            // Guard command/mod-driven floods without stopping older native-triggered recordings.
+            if (rain.size() >= 64) return true;
+            sounds.play(sound);
+            rain.add(new Rain(sound, ticks));
+            return true;
+        }
         // Resolve native range and gain once, at the already-scheduled native playback time.
         if (original.resolve(sounds) == null || original.getSound() == SoundManager.EMPTY_SOUND
                 || original.getSound() == SoundManager.INTENTIONALLY_EMPTY_SOUND) return false;
@@ -145,11 +109,29 @@ public final class WeatherPlayer {
         return true;
     }
 
+    private static boolean rainObstructed(Minecraft minecraft, SoundInstance original) {
+        if (original.isRelative() || original.getAttenuation() == SoundInstance.Attenuation.NONE) return false;
+        Vec3 listener = minecraft.gameRenderer.getMainCamera().getPosition();
+        Vec3 source = new Vec3(original.getX(), original.getY(), original.getZ());
+        // Native rain is local. Do not trace arbitrary long command/mod requests or load chunks.
+        if (listener.distanceToSqr(source) > 32 * 32) return false;
+        int minX = SectionPos.blockToSectionCoord((int) Math.floor(Math.min(listener.x, source.x)));
+        int maxX = SectionPos.blockToSectionCoord((int) Math.floor(Math.max(listener.x, source.x)));
+        int minZ = SectionPos.blockToSectionCoord((int) Math.floor(Math.min(listener.z, source.z)));
+        int maxZ = SectionPos.blockToSectionCoord((int) Math.floor(Math.max(listener.z, source.z)));
+        for (int x = minX; x <= maxX; x++) {
+            for (int z = minZ; z <= maxZ; z++) {
+                if (!minecraft.level.hasChunk(x, z)) return false;
+            }
+        }
+        return RainOcclusion.blocked(minecraft.level, listener, source);
+    }
+
     public static boolean available(SoundManager sounds, ResourceLocation id) {
         var event = sounds.getSoundEvent(id);
         return event != null && event.getWeight() > 0;
     }
 
-    private record Loop(BackgroundRainSound sound, long started) {}
+    private record Rain(BackgroundRainSound sound, long started) {}
     private record Thunder(ThunderSound sound, long started) {}
 }

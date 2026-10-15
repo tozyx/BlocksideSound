@@ -32,6 +32,7 @@ public final class SoundConfig {
         public int verticalRange = 16;
         public int scanIntervalTicks = 4;
         public int scanBudget = 64;
+        /** Distinct material-layer limit; each layer may contain several overlapping full takes. */
         public int maxActiveSounds = 8;
         public boolean debugLogging = false;
         public boolean debugParticles = false;
@@ -51,6 +52,7 @@ public final class SoundConfig {
     public static final class Material {
         public boolean enabled = true;
         public double volume = 1.0;
+        /** Used for plant drips only; legacy continuous-material values are kept for file compatibility. */
         public double triggerProbability = 0.35;
         public int attemptIntervalTicks = 10;
         public List<String> exclude = new ArrayList<>();

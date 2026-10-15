@@ -137,8 +137,10 @@ public final class SoundConfigScreen extends Screen {
         link(text("back_materials"), () -> navigate(Page.MATERIALS), null);
         toggle("material_enabled", material.enabled, value -> material.enabled = value);
         percent("material_volume", material.volume, value -> material.volume = value);
-        percent("probability", material.triggerProbability, value -> material.triggerProbability = value);
-        integer("interval", material.attemptIntervalTicks, 1, 1200, value -> material.attemptIntervalTicks = value);
+        if (materialId.equals("plant_drip")) {
+            percent("probability", material.triggerProbability, value -> material.triggerProbability = value);
+            integer("interval", material.attemptIntervalTicks, 1, 1200, value -> material.attemptIntervalTicks = value);
+        }
         link(text("exclusions_count", material.exclude.size()), () -> openRules(Page.EXCLUSIONS), "exclusions_help");
     }
 

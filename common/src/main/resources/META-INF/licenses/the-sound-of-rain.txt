@@ -13,16 +13,22 @@ Selected files: rain_sounds_wood_1..3.ogg, rain_sounds_metal_1..3.ogg,
 rain_sounds_glass_1..3.ogg, rain_sounds_foliage_1..3.ogg,
 rain_sounds_sand_1..3.ogg, rain_sounds_water_1..3.ogg,
 rain_sounds_fabric_1..3.ogg, rain_sounds_droplet_1..3.ogg.
-Processed into short mono cues with fades and Vorbis re-encoding.
+Material recordings retain full source durations; plant drips remain short.
+Mono Vorbis processing and runtime fades are recorded in the manifest.
 The exact original names, hashes, author comments and crop positions are in
 META-INF/licenses/blocksidesound-rain-audio-manifest.json.
 
-Additional weather recordings supplied by the user on 2026-10-15:
-rain1.ogg, rain2.ogg, rain3.ogg combined into stereo background loops;
-thunder_sounds_close_1..3.ogg, thunder_sounds_medium_1..4.ogg,
-thunder_sounds_far_1..4.ogg converted to mono without shortening.
-Loop construction, filtering, gain, original comments/hashes and output hashes
-are preserved in the same manifest. The exact release remains unspecified.
+Additional weather recordings:
+rain7..12.ogg retain full source durations and are downmixed to mono so
+native world-space positions have directional panning and distance attenuation.
+Sheltered versions use a 2800 Hz low-pass and bounded static filter-loss
+compensation (target 1.5 dB below dry mono, gain capped at 1.5). These play at
+natural speed rather than inheriting vanilla above's half speed. Native timing
+and positions remain; walls also select the sheltered profile using a collision
+ray. Both custom rain events have volume 0.7. Original supplied files are unchanged.
+thunder_sounds_close_1..3.ogg, thunder_sounds_medium_1..4.ogg and
+thunder_sounds_far_1..4.ogg remain converted to complete mono recordings.
+Exact source comments/hashes, processing and output hashes are in the manifest.
 Original source files and REAPER peak caches are not included in the mod jar.
 
 Original recording comments include:
@@ -32,6 +38,19 @@ Other recording author comments are preserved in the manifest.
 The MIT declaration is the upstream project's declaration; separate original
 recording sources have not been verified. These sounds are credited as
 third-party recordings, not recordings by BlocksideSound.
+
+Current processing:
+Material recordings remain separate complete takes, with the existing mono
+conversion and linear category calibration. Background rain7..12 are downmixed
+to mono for positional playback. Sheltered copies use a 2800 Hz low-pass and
+bounded static compensation for filter energy loss, at natural playback speed.
+All background takes retain their full durations, without cropping,
+concatenation, time stretching or synthesized loops.
+Material layers retain their existing staggered runtime overlap; background
+samples are dispatched only from native Minecraft weather requests.
+Thunder recordings remain complete; plant drips remain short single events.
+Exact processing, original comments/hashes and output hashes are in the
+packaged manifest. Original supplied source files remain unchanged.
 
 MIT License
 https://opensource.org/license/mit

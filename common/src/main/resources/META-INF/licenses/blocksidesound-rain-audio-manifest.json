@@ -14,12 +14,15 @@
       "ENCODER=X Lossless Decoder 20211018"
     ],
     "original_seconds": 5.0,
-    "crop_start_seconds": 0.3,
-    "output_seconds": 0.9,
+    "crop_start_seconds": 0.0,
+    "output_seconds": 5.0,
     "channels": 1,
     "sample_rate": 44100,
-    "processing": "Energetic window; 4 ms fade in, 25 ms fade out; Vorbis re-encode. Original comments retained in this manifest.",
-    "output_sha256": "1966360312452a97b8f7cc73054ed07dcd02cfa0d463f9c3e67b576d15dc8e8f"
+    "processing": "Full source duration, no energetic crop or shortened take; 4 ms/25 ms codec endpoint guards. Shared category linear gain 1.198953 toward -32 dBFS median RMS, limited by 0.70 source peak; Vorbis re-encode. Runtime plays independent full-length non-looping takes at staggered intervals, allowing multiple older takes to finish naturally. Only short onset and invalid-surface release fades; no duration-based tail cutoff or synthesized loop. Original author comments retained in this manifest.",
+    "output_sha256": "d918341b148af4cc521c4add21020ea39fa7ff73955fd71012cb3818444f877a",
+    "decoded_peak": 0.644489,
+    "decoded_rms_dbfs": -36.588,
+    "category_gain": 1.198953
   },
   {
     "output": "assets/blocksidesound/sounds/rain/wood_02.ogg",
@@ -36,12 +39,15 @@
       "ENCODER=X Lossless Decoder 20211018"
     ],
     "original_seconds": 5.0,
-    "crop_start_seconds": 2.4,
-    "output_seconds": 0.9,
+    "crop_start_seconds": 0.0,
+    "output_seconds": 5.0,
     "channels": 1,
     "sample_rate": 44100,
-    "processing": "Energetic window; 4 ms fade in, 25 ms fade out; Vorbis re-encode. Original comments retained in this manifest.",
-    "output_sha256": "9683a183b0d53be356079a99317dcb82e340821673674475b40f18e5c75eefa2"
+    "processing": "Full source duration, no energetic crop or shortened take; 4 ms/25 ms codec endpoint guards. Shared category linear gain 1.198953 toward -32 dBFS median RMS, limited by 0.70 source peak; Vorbis re-encode. Runtime plays independent full-length non-looping takes at staggered intervals, allowing multiple older takes to finish naturally. Only short onset and invalid-surface release fades; no duration-based tail cutoff or synthesized loop. Original author comments retained in this manifest.",
+    "output_sha256": "0d821dd7298079dd8a76c8086c508beacff13c9895623ceb737a54d95409f15e",
+    "decoded_peak": 0.271114,
+    "decoded_rms_dbfs": -37.271,
+    "category_gain": 1.198953
   },
   {
     "output": "assets/blocksidesound/sounds/rain/wood_03.ogg",
@@ -58,12 +64,15 @@
       "ENCODER=X Lossless Decoder 20211018"
     ],
     "original_seconds": 5.0,
-    "crop_start_seconds": 2.1,
-    "output_seconds": 0.9,
+    "crop_start_seconds": 0.0,
+    "output_seconds": 5.0,
     "channels": 1,
     "sample_rate": 44100,
-    "processing": "Energetic window; 4 ms fade in, 25 ms fade out; Vorbis re-encode. Original comments retained in this manifest.",
-    "output_sha256": "efe646917caea4d26a4e620b24b3c1099103f3443c1ba526766da72d0b3b653a"
+    "processing": "Full source duration, no energetic crop or shortened take; 4 ms/25 ms codec endpoint guards. Shared category linear gain 1.198953 toward -32 dBFS median RMS, limited by 0.70 source peak; Vorbis re-encode. Runtime plays independent full-length non-looping takes at staggered intervals, allowing multiple older takes to finish naturally. Only short onset and invalid-surface release fades; no duration-based tail cutoff or synthesized loop. Original author comments retained in this manifest.",
+    "output_sha256": "40a3174b4f4598779d47ec4c328ea0a45517a4faff9deb13e895a1250d9d716c",
+    "decoded_peak": 0.308876,
+    "decoded_rms_dbfs": -36.893,
+    "category_gain": 1.198953
   },
   {
     "output": "assets/blocksidesound/sounds/rain/metal_01.ogg",
@@ -77,12 +86,15 @@
     "original_sha256": "0136b63e68468b20aa68bf24fd4d07ebae1dc2d5a67740843678ca68f19a1320",
     "original_vorbis_comments": [],
     "original_seconds": 3.080635,
-    "crop_start_seconds": 1.0,
-    "output_seconds": 0.9,
+    "crop_start_seconds": 0.0,
+    "output_seconds": 3.080635,
     "channels": 1,
     "sample_rate": 44100,
-    "processing": "Energetic window; 4 ms fade in, 25 ms fade out; Vorbis re-encode. Original comments retained in this manifest.",
-    "output_sha256": "dea7708a15d5421eed28e63cdb2b38f70223b6ff5cf90146d3d1c1c6351632fa"
+    "processing": "Full source duration, no energetic crop or shortened take; 4 ms/25 ms codec endpoint guards. Shared category linear gain 1.300955 toward -32 dBFS median RMS, limited by 0.70 source peak; Vorbis re-encode. Runtime plays independent full-length non-looping takes at staggered intervals, allowing multiple older takes to finish naturally. Only short onset and invalid-surface release fades; no duration-based tail cutoff or synthesized loop. Original author comments retained in this manifest.",
+    "output_sha256": "e5ad27429742a151e31288390252affa07c7175ce5d0ce34d4f9186d8e528a23",
+    "decoded_peak": 0.470995,
+    "decoded_rms_dbfs": -31.713,
+    "category_gain": 1.300955
   },
   {
     "output": "assets/blocksidesound/sounds/rain/metal_02.ogg",
@@ -96,12 +108,15 @@
     "original_sha256": "5a6e178f3a34ec31fd398567a636db88d0bfb1c021e7ebd7681bee650fd8aa34",
     "original_vorbis_comments": [],
     "original_seconds": 3.274104,
-    "crop_start_seconds": 0.3,
-    "output_seconds": 0.9,
+    "crop_start_seconds": 0.0,
+    "output_seconds": 3.274104,
     "channels": 1,
     "sample_rate": 44100,
-    "processing": "Energetic window; 4 ms fade in, 25 ms fade out; Vorbis re-encode. Original comments retained in this manifest.",
-    "output_sha256": "092605a11c84d5b176adccf21c5a2ce9462194264c3b689cbef13175a4d94373"
+    "processing": "Full source duration, no energetic crop or shortened take; 4 ms/25 ms codec endpoint guards. Shared category linear gain 1.300955 toward -32 dBFS median RMS, limited by 0.70 source peak; Vorbis re-encode. Runtime plays independent full-length non-looping takes at staggered intervals, allowing multiple older takes to finish naturally. Only short onset and invalid-surface release fades; no duration-based tail cutoff or synthesized loop. Original author comments retained in this manifest.",
+    "output_sha256": "94aad3aa5dd1a27abb2e724f4ced4a831bdc9dac6c20e364595f21d4bb01adb0",
+    "decoded_peak": 0.205554,
+    "decoded_rms_dbfs": -39.942,
+    "category_gain": 1.300955
   },
   {
     "output": "assets/blocksidesound/sounds/rain/metal_03.ogg",
@@ -115,12 +130,15 @@
     "original_sha256": "2ec1c41df45942605b2bcfff86f0438aa5b7bf0715c8e4631a9de911fdd83986",
     "original_vorbis_comments": [],
     "original_seconds": 3.021111,
-    "crop_start_seconds": 0.2,
-    "output_seconds": 0.9,
+    "crop_start_seconds": 0.0,
+    "output_seconds": 3.021111,
     "channels": 1,
     "sample_rate": 44100,
-    "processing": "Energetic window; 4 ms fade in, 25 ms fade out; Vorbis re-encode. Original comments retained in this manifest.",
-    "output_sha256": "a6e3af97aec08bbf038859be4c229cb80ef820cce2d67164a1ebaa2b31dd96f6"
+    "processing": "Full source duration, no energetic crop or shortened take; 4 ms/25 ms codec endpoint guards. Shared category linear gain 1.300955 toward -32 dBFS median RMS, limited by 0.70 source peak; Vorbis re-encode. Runtime plays independent full-length non-looping takes at staggered intervals, allowing multiple older takes to finish naturally. Only short onset and invalid-surface release fades; no duration-based tail cutoff or synthesized loop. Original author comments retained in this manifest.",
+    "output_sha256": "396c647de0310ac377301e966909f02e19dd22c61053c48994e051a76507b5a4",
+    "decoded_peak": 0.532643,
+    "decoded_rms_dbfs": -31.824,
+    "category_gain": 1.300955
   },
   {
     "output": "assets/blocksidesound/sounds/rain/glass_01.ogg",
@@ -141,12 +159,15 @@
       "ARTIST=Tomas Herudek"
     ],
     "original_seconds": 6.388604,
-    "crop_start_seconds": 1.4,
-    "output_seconds": 0.9,
+    "crop_start_seconds": 0.0,
+    "output_seconds": 6.388604,
     "channels": 1,
     "sample_rate": 48000,
-    "processing": "Energetic window; 4 ms fade in, 25 ms fade out; Vorbis re-encode. Original comments retained in this manifest.",
-    "output_sha256": "661177902cab76edcf6b600155179fb72a1bb09aa618011f72aae8e711959eed"
+    "processing": "Full source duration, no energetic crop or shortened take; 4 ms/25 ms codec endpoint guards. Shared category linear gain 0.854839 toward -32 dBFS median RMS, limited by 0.70 source peak; Vorbis re-encode. Runtime plays independent full-length non-looping takes at staggered intervals, allowing multiple older takes to finish naturally. Only short onset and invalid-surface release fades; no duration-based tail cutoff or synthesized loop. Original author comments retained in this manifest.",
+    "output_sha256": "d48c103fd2a8fcf3d693df7214a3bae8cfb94c9fd7994167522c613ecc0f403f",
+    "decoded_peak": 0.301163,
+    "decoded_rms_dbfs": -30.504,
+    "category_gain": 0.854839
   },
   {
     "output": "assets/blocksidesound/sounds/rain/glass_02.ogg",
@@ -167,12 +188,15 @@
       "ARTIST=Tomas Herudek"
     ],
     "original_seconds": 7.542542,
-    "crop_start_seconds": 2.8,
-    "output_seconds": 0.9,
+    "crop_start_seconds": 0.0,
+    "output_seconds": 7.542542,
     "channels": 1,
     "sample_rate": 48000,
-    "processing": "Energetic window; 4 ms fade in, 25 ms fade out; Vorbis re-encode. Original comments retained in this manifest.",
-    "output_sha256": "5130723271fd6a0f3e76db9436660c7f8dcc80cfb0cde4e0d0731c0291edcad5"
+    "processing": "Full source duration, no energetic crop or shortened take; 4 ms/25 ms codec endpoint guards. Shared category linear gain 0.854839 toward -32 dBFS median RMS, limited by 0.70 source peak; Vorbis re-encode. Runtime plays independent full-length non-looping takes at staggered intervals, allowing multiple older takes to finish naturally. Only short onset and invalid-surface release fades; no duration-based tail cutoff or synthesized loop. Original author comments retained in this manifest.",
+    "output_sha256": "3ae10f6358b00a6c6927d4f3379533ae2629e57e4b2c68f0bcb601baa8d1e509",
+    "decoded_peak": 0.235515,
+    "decoded_rms_dbfs": -32.664,
+    "category_gain": 0.854839
   },
   {
     "output": "assets/blocksidesound/sounds/rain/glass_03.ogg",
@@ -193,12 +217,15 @@
       "ARTIST=Tomas Herudek"
     ],
     "original_seconds": 7.049437,
-    "crop_start_seconds": 3.4,
-    "output_seconds": 0.9,
+    "crop_start_seconds": 0.0,
+    "output_seconds": 7.049437,
     "channels": 1,
     "sample_rate": 48000,
-    "processing": "Energetic window; 4 ms fade in, 25 ms fade out; Vorbis re-encode. Original comments retained in this manifest.",
-    "output_sha256": "ab7fc7d18f192e22eb44b5ee25a2c3bd352316f523e0094ca8999e53bfc87eff"
+    "processing": "Full source duration, no energetic crop or shortened take; 4 ms/25 ms codec endpoint guards. Shared category linear gain 0.854839 toward -32 dBFS median RMS, limited by 0.70 source peak; Vorbis re-encode. Runtime plays independent full-length non-looping takes at staggered intervals, allowing multiple older takes to finish naturally. Only short onset and invalid-surface release fades; no duration-based tail cutoff or synthesized loop. Original author comments retained in this manifest.",
+    "output_sha256": "7bb93a3e044fd78bd4bcf61b5a9e4c047335eb2ec44bfba42ce20e1f7eb669b8",
+    "decoded_peak": 0.264961,
+    "decoded_rms_dbfs": -32.143,
+    "category_gain": 0.854839
   },
   {
     "output": "assets/blocksidesound/sounds/rain/foliage_01.ogg",
@@ -218,12 +245,15 @@
       "ALBUM="
     ],
     "original_seconds": 7.482604,
-    "crop_start_seconds": 4.0,
-    "output_seconds": 0.9,
+    "crop_start_seconds": 0.0,
+    "output_seconds": 7.482604,
     "channels": 1,
     "sample_rate": 48000,
-    "processing": "Energetic window; 4 ms fade in, 25 ms fade out; Vorbis re-encode. Original comments retained in this manifest.",
-    "output_sha256": "cb9464da7332a442a437eec64c9bb9096848dee1a199c278ca1b60785d6d241e"
+    "processing": "Full source duration, no energetic crop or shortened take; 4 ms/25 ms codec endpoint guards. Shared category linear gain 2.627265 toward -32 dBFS median RMS, limited by 0.70 source peak; Vorbis re-encode. Runtime plays independent full-length non-looping takes at staggered intervals, allowing multiple older takes to finish naturally. Only short onset and invalid-surface release fades; no duration-based tail cutoff or synthesized loop. Original author comments retained in this manifest.",
+    "output_sha256": "729c3ab88abf7e1f84535a7ca8052f082e5d7eec35ac9ba51b4952ee8fe173f8",
+    "decoded_peak": 0.427285,
+    "decoded_rms_dbfs": -31.835,
+    "category_gain": 2.627265
   },
   {
     "output": "assets/blocksidesound/sounds/rain/foliage_02.ogg",
@@ -243,12 +273,15 @@
       "ALBUM="
     ],
     "original_seconds": 7.482604,
-    "crop_start_seconds": 1.5,
-    "output_seconds": 0.9,
+    "crop_start_seconds": 0.0,
+    "output_seconds": 7.482604,
     "channels": 1,
     "sample_rate": 48000,
-    "processing": "Energetic window; 4 ms fade in, 25 ms fade out; Vorbis re-encode. Original comments retained in this manifest.",
-    "output_sha256": "72871ebaa585ccc834976d523092e73097e54c4c40f6103ab696391b0a61be85"
+    "processing": "Full source duration, no energetic crop or shortened take; 4 ms/25 ms codec endpoint guards. Shared category linear gain 2.627265 toward -32 dBFS median RMS, limited by 0.70 source peak; Vorbis re-encode. Runtime plays independent full-length non-looping takes at staggered intervals, allowing multiple older takes to finish naturally. Only short onset and invalid-surface release fades; no duration-based tail cutoff or synthesized loop. Original author comments retained in this manifest.",
+    "output_sha256": "047412d331139e049c1048d458247beaaccd85baa2eece7ffe24a54286e5c8b0",
+    "decoded_peak": 0.400861,
+    "decoded_rms_dbfs": -31.1,
+    "category_gain": 2.627265
   },
   {
     "output": "assets/blocksidesound/sounds/rain/foliage_03.ogg",
@@ -268,12 +301,15 @@
       "ALBUM="
     ],
     "original_seconds": 7.482604,
-    "crop_start_seconds": 4.5,
-    "output_seconds": 0.9,
+    "crop_start_seconds": 0.0,
+    "output_seconds": 7.482604,
     "channels": 1,
     "sample_rate": 48000,
-    "processing": "Energetic window; 4 ms fade in, 25 ms fade out; Vorbis re-encode. Original comments retained in this manifest.",
-    "output_sha256": "561aa3f6c9d659aa3b565dbd8ebe4eceeeb2c5dc2c0424e8b5b13c0db4bc1846"
+    "processing": "Full source duration, no energetic crop or shortened take; 4 ms/25 ms codec endpoint guards. Shared category linear gain 2.627265 toward -32 dBFS median RMS, limited by 0.70 source peak; Vorbis re-encode. Runtime plays independent full-length non-looping takes at staggered intervals, allowing multiple older takes to finish naturally. Only short onset and invalid-surface release fades; no duration-based tail cutoff or synthesized loop. Original author comments retained in this manifest.",
+    "output_sha256": "945d4f8360ed04521d00eea64d76b30184eafeaf90fb47e34efdf811c678d867",
+    "decoded_peak": 0.478335,
+    "decoded_rms_dbfs": -32.55,
+    "category_gain": 2.627265
   },
   {
     "output": "assets/blocksidesound/sounds/rain/granular_01.ogg",
@@ -290,12 +326,15 @@
       "DATE=2003:08:31"
     ],
     "original_seconds": 5.0,
-    "crop_start_seconds": 2.5,
-    "output_seconds": 0.9,
+    "crop_start_seconds": 0.0,
+    "output_seconds": 5.0,
     "channels": 1,
     "sample_rate": 44100,
-    "processing": "Energetic window; 4 ms fade in, 25 ms fade out; Vorbis re-encode. Original comments retained in this manifest.",
-    "output_sha256": "b2f896431f7b907903c8f973fe2b492f72a8daa46610d2a4a3ef0f3f88961b07"
+    "processing": "Full source duration, no energetic crop or shortened take; 4 ms/25 ms codec endpoint guards. Shared category linear gain 1.998266 toward -32 dBFS median RMS, limited by 0.70 source peak; Vorbis re-encode. Runtime plays independent full-length non-looping takes at staggered intervals, allowing multiple older takes to finish naturally. Only short onset and invalid-surface release fades; no duration-based tail cutoff or synthesized loop. Original author comments retained in this manifest.",
+    "output_sha256": "fbb0f150f4df58613dd7b3cf879824da3b3abb2afc6a3d2992434b8db6dece92",
+    "decoded_peak": 0.386168,
+    "decoded_rms_dbfs": -32.172,
+    "category_gain": 1.998266
   },
   {
     "output": "assets/blocksidesound/sounds/rain/granular_02.ogg",
@@ -312,12 +351,15 @@
       "DATE=2003:08:31"
     ],
     "original_seconds": 5.0,
-    "crop_start_seconds": 1.0,
-    "output_seconds": 0.9,
+    "crop_start_seconds": 0.0,
+    "output_seconds": 5.0,
     "channels": 1,
     "sample_rate": 44100,
-    "processing": "Energetic window; 4 ms fade in, 25 ms fade out; Vorbis re-encode. Original comments retained in this manifest.",
-    "output_sha256": "5e313fe329ebfcf2f154c918a3dedcf78d9a72851696450c913d0a3c9b6b1470"
+    "processing": "Full source duration, no energetic crop or shortened take; 4 ms/25 ms codec endpoint guards. Shared category linear gain 1.998266 toward -32 dBFS median RMS, limited by 0.70 source peak; Vorbis re-encode. Runtime plays independent full-length non-looping takes at staggered intervals, allowing multiple older takes to finish naturally. Only short onset and invalid-surface release fades; no duration-based tail cutoff or synthesized loop. Original author comments retained in this manifest.",
+    "output_sha256": "32c24101f2f934b3ceadb96dab7f87e10b36bf0090b659bb011a2bdcc8b5c450",
+    "decoded_peak": 0.370598,
+    "decoded_rms_dbfs": -31.587,
+    "category_gain": 1.998266
   },
   {
     "output": "assets/blocksidesound/sounds/rain/granular_03.ogg",
@@ -334,12 +376,15 @@
       "DATE=2003:08:31"
     ],
     "original_seconds": 5.0,
-    "crop_start_seconds": 0.1,
-    "output_seconds": 0.9,
+    "crop_start_seconds": 0.0,
+    "output_seconds": 5.0,
     "channels": 1,
     "sample_rate": 44100,
-    "processing": "Energetic window; 4 ms fade in, 25 ms fade out; Vorbis re-encode. Original comments retained in this manifest.",
-    "output_sha256": "21bb3d44b09448b1897f7f315f35a27487e0424e126b47da2f4a36b7991d8dfd"
+    "processing": "Full source duration, no energetic crop or shortened take; 4 ms/25 ms codec endpoint guards. Shared category linear gain 1.998266 toward -32 dBFS median RMS, limited by 0.70 source peak; Vorbis re-encode. Runtime plays independent full-length non-looping takes at staggered intervals, allowing multiple older takes to finish naturally. Only short onset and invalid-surface release fades; no duration-based tail cutoff or synthesized loop. Original author comments retained in this manifest.",
+    "output_sha256": "f52c59f6a972f4acc21a33482066f6927ebe436666c5554f147f3a430cfadd04",
+    "decoded_peak": 0.479463,
+    "decoded_rms_dbfs": -31.852,
+    "category_gain": 1.998266
   },
   {
     "output": "assets/blocksidesound/sounds/rain/water_01.ogg",
@@ -356,12 +401,15 @@
       "ENCODER=REAPER"
     ],
     "original_seconds": 5.0,
-    "crop_start_seconds": 0.7,
-    "output_seconds": 0.9,
+    "crop_start_seconds": 0.0,
+    "output_seconds": 5.0,
     "channels": 1,
     "sample_rate": 44100,
-    "processing": "Energetic window; 4 ms fade in, 25 ms fade out; Vorbis re-encode. Original comments retained in this manifest.",
-    "output_sha256": "b50499e9a495917d5250a855549b65db1d5addd421d111ab972e2aeed4dd4778"
+    "processing": "Full source duration, no energetic crop or shortened take; 4 ms/25 ms codec endpoint guards. Shared category linear gain 0.645921 toward -32 dBFS median RMS, limited by 0.70 source peak; Vorbis re-encode. Runtime plays independent full-length non-looping takes at staggered intervals, allowing multiple older takes to finish naturally. Only short onset and invalid-surface release fades; no duration-based tail cutoff or synthesized loop. Original author comments retained in this manifest.",
+    "output_sha256": "bd3fdbf344cfa137ecb44fdc757ba67d40c37fcf9b38804b664e5e9baff3f36f",
+    "decoded_peak": 0.303837,
+    "decoded_rms_dbfs": -31.835,
+    "category_gain": 0.645921
   },
   {
     "output": "assets/blocksidesound/sounds/rain/water_02.ogg",
@@ -378,12 +426,15 @@
       "ENCODER=REAPER"
     ],
     "original_seconds": 5.0,
-    "crop_start_seconds": 2.1,
-    "output_seconds": 0.9,
+    "crop_start_seconds": 0.0,
+    "output_seconds": 5.0,
     "channels": 1,
     "sample_rate": 44100,
-    "processing": "Energetic window; 4 ms fade in, 25 ms fade out; Vorbis re-encode. Original comments retained in this manifest.",
-    "output_sha256": "4a78dbebb1c7887da4dfa1ee668e57ba0ddab8144903fd81365ad339c3c54f2b"
+    "processing": "Full source duration, no energetic crop or shortened take; 4 ms/25 ms codec endpoint guards. Shared category linear gain 0.645921 toward -32 dBFS median RMS, limited by 0.70 source peak; Vorbis re-encode. Runtime plays independent full-length non-looping takes at staggered intervals, allowing multiple older takes to finish naturally. Only short onset and invalid-surface release fades; no duration-based tail cutoff or synthesized loop. Original author comments retained in this manifest.",
+    "output_sha256": "d5d01f8c4d0aba642749220aae896c37a73c17406b491d46c1983a42ce529ae8",
+    "decoded_peak": 0.480623,
+    "decoded_rms_dbfs": -31.515,
+    "category_gain": 0.645921
   },
   {
     "output": "assets/blocksidesound/sounds/rain/water_03.ogg",
@@ -400,12 +451,15 @@
       "ENCODER=REAPER"
     ],
     "original_seconds": 5.0,
-    "crop_start_seconds": 1.6,
-    "output_seconds": 0.9,
+    "crop_start_seconds": 0.0,
+    "output_seconds": 5.0,
     "channels": 1,
     "sample_rate": 44100,
-    "processing": "Energetic window; 4 ms fade in, 25 ms fade out; Vorbis re-encode. Original comments retained in this manifest.",
-    "output_sha256": "174a2d7dd0959d4a7f4fab39ba1f43f99f31f7742584b89a7f54ec20b0c430fd"
+    "processing": "Full source duration, no energetic crop or shortened take; 4 ms/25 ms codec endpoint guards. Shared category linear gain 0.645921 toward -32 dBFS median RMS, limited by 0.70 source peak; Vorbis re-encode. Runtime plays independent full-length non-looping takes at staggered intervals, allowing multiple older takes to finish naturally. Only short onset and invalid-surface release fades; no duration-based tail cutoff or synthesized loop. Original author comments retained in this manifest.",
+    "output_sha256": "ed4cc93873301721ce07d0ee3fcf8dffc859a0c137fbc6269b7dd81aba91acd9",
+    "decoded_peak": 0.386313,
+    "decoded_rms_dbfs": -32.401,
+    "category_gain": 0.645921
   },
   {
     "output": "assets/blocksidesound/sounds/rain/soft_01.ogg",
@@ -426,12 +480,15 @@
       "ARTIST=Ivo Vicic"
     ],
     "original_seconds": 7.139521,
-    "crop_start_seconds": 3.5,
-    "output_seconds": 0.9,
+    "crop_start_seconds": 0.0,
+    "output_seconds": 7.139521,
     "channels": 1,
     "sample_rate": 48000,
-    "processing": "Energetic window; 4 ms fade in, 25 ms fade out; Vorbis re-encode. Original comments retained in this manifest.",
-    "output_sha256": "7c33e1b401abcb453e031408ddc1c0555324c5f12d4bc54755206e8295fbfc0b"
+    "processing": "Full source duration, no energetic crop or shortened take; 4 ms/25 ms codec endpoint guards. Shared category linear gain 2.049567 toward -32 dBFS median RMS, limited by 0.70 source peak; Vorbis re-encode. Runtime plays independent full-length non-looping takes at staggered intervals, allowing multiple older takes to finish naturally. Only short onset and invalid-surface release fades; no duration-based tail cutoff or synthesized loop. Original author comments retained in this manifest.",
+    "output_sha256": "43d81bf072c9cc399a4096235f10580a7f29599b99b227ad507d27c2d0c71305",
+    "decoded_peak": 0.608013,
+    "decoded_rms_dbfs": -32.181,
+    "category_gain": 2.049567
   },
   {
     "output": "assets/blocksidesound/sounds/rain/soft_02.ogg",
@@ -452,12 +509,15 @@
       "ARTIST=Ivo Vicic"
     ],
     "original_seconds": 7.139521,
-    "crop_start_seconds": 1.3,
-    "output_seconds": 0.9,
+    "crop_start_seconds": 0.0,
+    "output_seconds": 7.139521,
     "channels": 1,
     "sample_rate": 48000,
-    "processing": "Energetic window; 4 ms fade in, 25 ms fade out; Vorbis re-encode. Original comments retained in this manifest.",
-    "output_sha256": "447fad5de79032193843d816a822722bf4ac62f8c0f427018caa8888c99069e4"
+    "processing": "Full source duration, no energetic crop or shortened take; 4 ms/25 ms codec endpoint guards. Shared category linear gain 2.049567 toward -32 dBFS median RMS, limited by 0.70 source peak; Vorbis re-encode. Runtime plays independent full-length non-looping takes at staggered intervals, allowing multiple older takes to finish naturally. Only short onset and invalid-surface release fades; no duration-based tail cutoff or synthesized loop. Original author comments retained in this manifest.",
+    "output_sha256": "8dc5f8abc00eea37c6c40a3fcbad5f329808a368885d2044e3bc25ce4b419735",
+    "decoded_peak": 0.490301,
+    "decoded_rms_dbfs": -33.128,
+    "category_gain": 2.049567
   },
   {
     "output": "assets/blocksidesound/sounds/rain/soft_03.ogg",
@@ -478,12 +538,15 @@
       "ARTIST=Ivo Vicic"
     ],
     "original_seconds": 8.69925,
-    "crop_start_seconds": 0.9,
-    "output_seconds": 0.9,
+    "crop_start_seconds": 0.0,
+    "output_seconds": 8.69925,
     "channels": 1,
     "sample_rate": 48000,
-    "processing": "Energetic window; 4 ms fade in, 25 ms fade out; Vorbis re-encode. Original comments retained in this manifest.",
-    "output_sha256": "3da175ca11756d0e8df6e9fc91d94f1760777e32054809dc716b6fb0e9e01f16"
+    "processing": "Full source duration, no energetic crop or shortened take; 4 ms/25 ms codec endpoint guards. Shared category linear gain 2.049567 toward -32 dBFS median RMS, limited by 0.70 source peak; Vorbis re-encode. Runtime plays independent full-length non-looping takes at staggered intervals, allowing multiple older takes to finish naturally. Only short onset and invalid-surface release fades; no duration-based tail cutoff or synthesized loop. Original author comments retained in this manifest.",
+    "output_sha256": "9d53e37f267d3ad9c0d8d70cb7c73ae14597bbfd7541912ce988c9c94d2f1ffb",
+    "decoded_peak": 0.552491,
+    "decoded_rms_dbfs": -31.398,
+    "category_gain": 2.049567
   },
   {
     "output": "assets/blocksidesound/sounds/rain/plant_drip_01.ogg",
@@ -503,8 +566,11 @@
     "output_seconds": 0.5,
     "channels": 1,
     "sample_rate": 44100,
-    "processing": "Energetic window; 4 ms fade in, 25 ms fade out; Vorbis re-encode. Original comments retained in this manifest.",
-    "output_sha256": "4e13cf69e91bacf96ed06d65cbb54f89914a483efffd1d7eecd231636ff6e7cf"
+    "processing": "Original crop position/duration retained; 4 ms fade in, 25 ms fade out; shared category gain 9.736170 toward -32 dBFS median RMS, limited by 0.70 source peak headroom; Vorbis re-encode. Original author comments remain in this manifest.",
+    "output_sha256": "f3b144c3baf5abab3418653f9bd75d7c330995c30c519c1711ec20213e7f16b2",
+    "decoded_peak": 0.310484,
+    "decoded_rms_dbfs": -35.113,
+    "category_gain": 9.73617
   },
   {
     "output": "assets/blocksidesound/sounds/rain/plant_drip_02.ogg",
@@ -524,8 +590,11 @@
     "output_seconds": 0.5,
     "channels": 1,
     "sample_rate": 44100,
-    "processing": "Energetic window; 4 ms fade in, 25 ms fade out; Vorbis re-encode. Original comments retained in this manifest.",
-    "output_sha256": "ff436463576f6c66336381709aef4867aabb7918006f18e82b7573fb4da7caa6"
+    "processing": "Original crop position/duration retained; 4 ms fade in, 25 ms fade out; shared category gain 9.736170 toward -32 dBFS median RMS, limited by 0.70 source peak headroom; Vorbis re-encode. Original author comments remain in this manifest.",
+    "output_sha256": "303b7bed0c3cd54bf7966451c4fcd2ecb2de5dd277e568d5e81fd5f3c5c20779",
+    "decoded_peak": 0.693594,
+    "decoded_rms_dbfs": -36.215,
+    "category_gain": 9.73617
   },
   {
     "output": "assets/blocksidesound/sounds/rain/plant_drip_03.ogg",
@@ -545,74 +614,11 @@
     "output_seconds": 0.5,
     "channels": 1,
     "sample_rate": 44100,
-    "processing": "Energetic window; 4 ms fade in, 25 ms fade out; Vorbis re-encode. Original comments retained in this manifest.",
-    "output_sha256": "6c4f8c066d9e345c96d33870e054746aaf2b5f96285e2424da3031c4e9eecddf"
-  },
-  {
-    "output": "assets/blocksidesound/sounds/weather/rain_loop.ogg",
-    "original_file": "rain1.ogg + rain2.ogg + rain3.ogg",
-    "source_project": "The Sound of Rain",
-    "source_author": "JShep",
-    "source_url": "https://modrinth.com/mod/the-sound-of-rain",
-    "declared_project_license": "MIT",
-    "license_verified_date": "2026-10-14",
-    "original_release_version": null,
-    "originals": [
-      {
-        "file": "rain1.ogg",
-        "sha256": "130b733556a55d2fa4529fbaf7de94afb7e388998615edccee2ca7825f6da207",
-        "vorbis_comments": []
-      },
-      {
-        "file": "rain2.ogg",
-        "sha256": "7d44aadbf5a08d8d88030b1df5cd143576f458e4b6f4b7b75998f1604da5c08d",
-        "vorbis_comments": []
-      },
-      {
-        "file": "rain3.ogg",
-        "sha256": "6aff9de8a07ed053322be843c955f955b814da2c90660f5ca98e49195dddff32",
-        "vorbis_comments": []
-      }
-    ],
-    "output_seconds": 6.95322,
-    "channels": 2,
-    "sample_rate": 44100,
-    "processing": "Stereo ambience from three uncut clips, circular 120 ms equal-power overlaps; linear gain 4.619783; Vorbis q5. Intended looping seam requires listening verification.",
-    "output_sha256": "25647459417e13ca23581266898585982e272bafb4e773598c637fa4724b4e52",
-    "decoded_peak": 0.72383
-  },
-  {
-    "output": "assets/blocksidesound/sounds/weather/rain_above_loop.ogg",
-    "original_file": "rain1.ogg + rain2.ogg + rain3.ogg",
-    "source_project": "The Sound of Rain",
-    "source_author": "JShep",
-    "source_url": "https://modrinth.com/mod/the-sound-of-rain",
-    "declared_project_license": "MIT",
-    "license_verified_date": "2026-10-14",
-    "original_release_version": null,
-    "originals": [
-      {
-        "file": "rain1.ogg",
-        "sha256": "130b733556a55d2fa4529fbaf7de94afb7e388998615edccee2ca7825f6da207",
-        "vorbis_comments": []
-      },
-      {
-        "file": "rain2.ogg",
-        "sha256": "7d44aadbf5a08d8d88030b1df5cd143576f458e4b6f4b7b75998f1604da5c08d",
-        "vorbis_comments": []
-      },
-      {
-        "file": "rain3.ogg",
-        "sha256": "6aff9de8a07ed053322be843c955f955b814da2c90660f5ca98e49195dddff32",
-        "vorbis_comments": []
-      }
-    ],
-    "output_seconds": 6.95322,
-    "channels": 2,
-    "sample_rate": 44100,
-    "processing": "Same circular stereo loop and gain 4.619783; 1800 Hz low-pass with wrapped filter padding, Vorbis q5. Controller applies sheltered gain separately.",
-    "output_sha256": "d3e289e181dfbbae51a741fed9c9b074c9fa139391e7e0808b651e7a9133512b",
-    "decoded_peak": 0.194634
+    "processing": "Original crop position/duration retained; 4 ms fade in, 25 ms fade out; shared category gain 9.736170 toward -32 dBFS median RMS, limited by 0.70 source peak headroom; Vorbis re-encode. Original author comments remain in this manifest.",
+    "output_sha256": "60ff0a8262e6679ea621f32e775b4387aab77947a99037768ae48e1fbb302bce",
+    "decoded_peak": 0.37311,
+    "decoded_rms_dbfs": -30.148,
+    "category_gain": 9.73617
   },
   {
     "output": "assets/blocksidesound/sounds/weather/thunder_close_1.ogg",
@@ -892,5 +898,311 @@
     "processing": "Full duration; mono 44100 Hz, linear gain 0.801529 to cap decoded source peaks; 2 ms attack/40 ms release, Vorbis q5. Distance group retained from supplied filename.",
     "output_sha256": "b259299acbb33509e8a9e0129fe0de4a11c0663f5f5ca4a66b3d6501921f22fc",
     "decoded_peak": 0.776732
+  },
+  {
+    "source_project": "The Sound of Rain",
+    "source_author": "JShep",
+    "source_url": "https://modrinth.com/mod/the-sound-of-rain",
+    "declared_project_license": "MIT",
+    "license_verified_date": "2026-10-14",
+    "original_release_version": null,
+    "output": "assets/blocksidesound/sounds/weather/rain7.ogg",
+    "original_file": "rain7.ogg",
+    "original_sha256": "b89bd3774c11a64c2951681bd8a0e4f87431e6056ec735a63352aa5bd707ac29",
+    "original_vorbis_comments": [
+      "ENCODER=REAPER"
+    ],
+    "original_seconds": 2.415533,
+    "output_seconds": 2.415533,
+    "channels": 1,
+    "sample_rate": 44100,
+    "source_gain": 1.0,
+    "processing": "Full original duration retained; stereo averaged to mono so native world position and distance attenuation actually spatialize. No cropping, concatenation, time stretching or synthesized loops; independent native-triggered recordings finish naturally. Vorbis block encoding.",
+    "output_sha256": "9469a3c923bd4555198f4d6aeee89aac176e0e0403453443a65b567d8510c2f3",
+    "decoded_peak": 0.095504,
+    "decoded_rms_dbfs": -40.175,
+    "source_channels": 2,
+    "playback_pitch": 1.0
+  },
+  {
+    "source_project": "The Sound of Rain",
+    "source_author": "JShep",
+    "source_url": "https://modrinth.com/mod/the-sound-of-rain",
+    "declared_project_license": "MIT",
+    "license_verified_date": "2026-10-14",
+    "original_release_version": null,
+    "output": "assets/blocksidesound/sounds/weather/rain8.ogg",
+    "original_file": "rain8.ogg",
+    "original_sha256": "4bc79c2060cd63cac210cab134cb2b48da133ff4e88e154786965cb8516c2953",
+    "original_vorbis_comments": [
+      "ENCODER=REAPER"
+    ],
+    "original_seconds": 2.75,
+    "output_seconds": 2.75,
+    "channels": 1,
+    "sample_rate": 44100,
+    "source_gain": 1.0,
+    "processing": "Full original duration retained; stereo averaged to mono so native world position and distance attenuation actually spatialize. No cropping, concatenation, time stretching or synthesized loops; independent native-triggered recordings finish naturally. Vorbis block encoding.",
+    "output_sha256": "777ded49cff09d8d359fa6655c9430f27e10e1544c399d48a193cb0662c75e93",
+    "decoded_peak": 0.097956,
+    "decoded_rms_dbfs": -40.144,
+    "source_channels": 2,
+    "playback_pitch": 1.0
+  },
+  {
+    "source_project": "The Sound of Rain",
+    "source_author": "JShep",
+    "source_url": "https://modrinth.com/mod/the-sound-of-rain",
+    "declared_project_license": "MIT",
+    "license_verified_date": "2026-10-14",
+    "original_release_version": null,
+    "output": "assets/blocksidesound/sounds/weather/rain9.ogg",
+    "original_file": "rain9.ogg",
+    "original_sha256": "a696a7933e8df05e0d475847b3e216fd472cd027c1455515ede4bb57a99d9e6c",
+    "original_vorbis_comments": [
+      "ENCODER=REAPER"
+    ],
+    "original_seconds": 2.19,
+    "output_seconds": 2.19,
+    "channels": 1,
+    "sample_rate": 44100,
+    "source_gain": 1.0,
+    "processing": "Full original duration retained; stereo averaged to mono so native world position and distance attenuation actually spatialize. No cropping, concatenation, time stretching or synthesized loops; independent native-triggered recordings finish naturally. Vorbis block encoding.",
+    "output_sha256": "a34bac17d06af8dc7bf7875b32a1e427c532807dc3b6ae70d05e88c3841b65e8",
+    "decoded_peak": 0.099357,
+    "decoded_rms_dbfs": -39.393,
+    "source_channels": 2,
+    "playback_pitch": 1.0
+  },
+  {
+    "source_project": "The Sound of Rain",
+    "source_author": "JShep",
+    "source_url": "https://modrinth.com/mod/the-sound-of-rain",
+    "declared_project_license": "MIT",
+    "license_verified_date": "2026-10-14",
+    "original_release_version": null,
+    "output": "assets/blocksidesound/sounds/weather/rain10.ogg",
+    "original_file": "rain10.ogg",
+    "original_sha256": "cfb259f42b58fad47dccfe4f799f1d2033dcaa16614f867e6098fe58ad5debce",
+    "original_vorbis_comments": [
+      "ENCODER=REAPER"
+    ],
+    "original_seconds": 2.42,
+    "output_seconds": 2.42,
+    "channels": 1,
+    "sample_rate": 44100,
+    "source_gain": 1.0,
+    "processing": "Full original duration retained; stereo averaged to mono so native world position and distance attenuation actually spatialize. No cropping, concatenation, time stretching or synthesized loops; independent native-triggered recordings finish naturally. Vorbis block encoding.",
+    "output_sha256": "14de24ff950e91e24adabcf85d74e92b3e2af305746476f88f0fcc372b6a4d36",
+    "decoded_peak": 0.095504,
+    "decoded_rms_dbfs": -40.23,
+    "source_channels": 2,
+    "playback_pitch": 1.0
+  },
+  {
+    "source_project": "The Sound of Rain",
+    "source_author": "JShep",
+    "source_url": "https://modrinth.com/mod/the-sound-of-rain",
+    "declared_project_license": "MIT",
+    "license_verified_date": "2026-10-14",
+    "original_release_version": null,
+    "output": "assets/blocksidesound/sounds/weather/rain11.ogg",
+    "original_file": "rain11.ogg",
+    "original_sha256": "7ef0939e540fbab8324ab01b5894cabfcc6e4b0bd208863d5c51736f069ce98b",
+    "original_vorbis_comments": [
+      "ENCODER=REAPER"
+    ],
+    "original_seconds": 2.74,
+    "output_seconds": 2.74,
+    "channels": 1,
+    "sample_rate": 44100,
+    "source_gain": 1.0,
+    "processing": "Full original duration retained; stereo averaged to mono so native world position and distance attenuation actually spatialize. No cropping, concatenation, time stretching or synthesized loops; independent native-triggered recordings finish naturally. Vorbis block encoding.",
+    "output_sha256": "7393593985a3aa4c21de0847ae717a6e7d636572dbd8ed96768a2621aa83bff5",
+    "decoded_peak": 0.097956,
+    "decoded_rms_dbfs": -40.128,
+    "source_channels": 2,
+    "playback_pitch": 1.0
+  },
+  {
+    "source_project": "The Sound of Rain",
+    "source_author": "JShep",
+    "source_url": "https://modrinth.com/mod/the-sound-of-rain",
+    "declared_project_license": "MIT",
+    "license_verified_date": "2026-10-14",
+    "original_release_version": null,
+    "output": "assets/blocksidesound/sounds/weather/rain12.ogg",
+    "original_file": "rain12.ogg",
+    "original_sha256": "9084c2e186adbc40ec092c5b087c715d003e32a6c442c738f5187be15f4fb039",
+    "original_vorbis_comments": [
+      "ENCODER=REAPER"
+    ],
+    "original_seconds": 2.19,
+    "output_seconds": 2.19,
+    "channels": 1,
+    "sample_rate": 44100,
+    "source_gain": 1.0,
+    "processing": "Full original duration retained; stereo averaged to mono so native world position and distance attenuation actually spatialize. No cropping, concatenation, time stretching or synthesized loops; independent native-triggered recordings finish naturally. Vorbis block encoding.",
+    "output_sha256": "964edc338d664cdd425bce0464bcbf7f4f402bce7202c9b268ef71ef0c454d5f",
+    "decoded_peak": 0.094341,
+    "decoded_rms_dbfs": -39.917,
+    "source_channels": 2,
+    "playback_pitch": 1.0
+  },
+  {
+    "source_project": "The Sound of Rain",
+    "source_author": "JShep",
+    "source_url": "https://modrinth.com/mod/the-sound-of-rain",
+    "declared_project_license": "MIT",
+    "license_verified_date": "2026-10-14",
+    "original_release_version": null,
+    "output": "assets/blocksidesound/sounds/weather/rain_above7.ogg",
+    "original_file": "rain7.ogg",
+    "original_sha256": "b89bd3774c11a64c2951681bd8a0e4f87431e6056ec735a63352aa5bd707ac29",
+    "original_vorbis_comments": [
+      "ENCODER=REAPER"
+    ],
+    "original_seconds": 2.415533,
+    "output_seconds": 2.415533,
+    "channels": 1,
+    "sample_rate": 44100,
+    "source_gain": 1.397498802,
+    "processing": "Full original duration retained; stereo averaged to mono so native world position and distance attenuation actually spatialize. No cropping, concatenation, time stretching or synthesized loops; independent native-triggered recordings finish naturally. Vorbis block encoding. Reflected-padding 2800 Hz low-pass; bounded static gain compensates filter energy loss toward 1.5 dB below the corresponding dry mono take, capped at 1.5. Playback uses natural speed (cancels native above pitch 0.5) and sheltered base volume. No dynamic compression.",
+    "output_sha256": "8311710f4c046345984d5cf85cb20610087a05de0dc693937641e3b726ffa779",
+    "decoded_peak": 0.057222,
+    "decoded_rms_dbfs": -41.733,
+    "source_channels": 2,
+    "playback_pitch": 1.0,
+    "source_lowpass_hz": 2800
+  },
+  {
+    "source_project": "The Sound of Rain",
+    "source_author": "JShep",
+    "source_url": "https://modrinth.com/mod/the-sound-of-rain",
+    "declared_project_license": "MIT",
+    "license_verified_date": "2026-10-14",
+    "original_release_version": null,
+    "output": "assets/blocksidesound/sounds/weather/rain_above8.ogg",
+    "original_file": "rain8.ogg",
+    "original_sha256": "4bc79c2060cd63cac210cab134cb2b48da133ff4e88e154786965cb8516c2953",
+    "original_vorbis_comments": [
+      "ENCODER=REAPER"
+    ],
+    "original_seconds": 2.75,
+    "output_seconds": 2.75,
+    "channels": 1,
+    "sample_rate": 44100,
+    "source_gain": 1.186610784,
+    "processing": "Full original duration retained; stereo averaged to mono so native world position and distance attenuation actually spatialize. No cropping, concatenation, time stretching or synthesized loops; independent native-triggered recordings finish naturally. Vorbis block encoding. Reflected-padding 2800 Hz low-pass; bounded static gain compensates filter energy loss toward 1.5 dB below the corresponding dry mono take, capped at 1.5. Playback uses natural speed (cancels native above pitch 0.5) and sheltered base volume. No dynamic compression.",
+    "output_sha256": "a00f5784d353a89b393bb932deed4afd2859f68c2342c89d64c12b1cda1c67a9",
+    "decoded_peak": 0.055787,
+    "decoded_rms_dbfs": -41.664,
+    "source_channels": 2,
+    "playback_pitch": 1.0,
+    "source_lowpass_hz": 2800
+  },
+  {
+    "source_project": "The Sound of Rain",
+    "source_author": "JShep",
+    "source_url": "https://modrinth.com/mod/the-sound-of-rain",
+    "declared_project_license": "MIT",
+    "license_verified_date": "2026-10-14",
+    "original_release_version": null,
+    "output": "assets/blocksidesound/sounds/weather/rain_above9.ogg",
+    "original_file": "rain9.ogg",
+    "original_sha256": "a696a7933e8df05e0d475847b3e216fd472cd027c1455515ede4bb57a99d9e6c",
+    "original_vorbis_comments": [
+      "ENCODER=REAPER"
+    ],
+    "original_seconds": 2.19,
+    "output_seconds": 2.19,
+    "channels": 1,
+    "sample_rate": 44100,
+    "source_gain": 1.326287173,
+    "processing": "Full original duration retained; stereo averaged to mono so native world position and distance attenuation actually spatialize. No cropping, concatenation, time stretching or synthesized loops; independent native-triggered recordings finish naturally. Vorbis block encoding. Reflected-padding 2800 Hz low-pass; bounded static gain compensates filter energy loss toward 1.5 dB below the corresponding dry mono take, capped at 1.5. Playback uses natural speed (cancels native above pitch 0.5) and sheltered base volume. No dynamic compression.",
+    "output_sha256": "52f38fece8c32a76e5b1036c0d5e31bea51cedebfe1fcb682e4f145c68380cb4",
+    "decoded_peak": 0.041582,
+    "decoded_rms_dbfs": -40.993,
+    "source_channels": 2,
+    "playback_pitch": 1.0,
+    "source_lowpass_hz": 2800
+  },
+  {
+    "source_project": "The Sound of Rain",
+    "source_author": "JShep",
+    "source_url": "https://modrinth.com/mod/the-sound-of-rain",
+    "declared_project_license": "MIT",
+    "license_verified_date": "2026-10-14",
+    "original_release_version": null,
+    "output": "assets/blocksidesound/sounds/weather/rain_above10.ogg",
+    "original_file": "rain10.ogg",
+    "original_sha256": "cfb259f42b58fad47dccfe4f799f1d2033dcaa16614f867e6098fe58ad5debce",
+    "original_vorbis_comments": [
+      "ENCODER=REAPER"
+    ],
+    "original_seconds": 2.42,
+    "output_seconds": 2.42,
+    "channels": 1,
+    "sample_rate": 44100,
+    "source_gain": 1.397140859,
+    "processing": "Full original duration retained; stereo averaged to mono so native world position and distance attenuation actually spatialize. No cropping, concatenation, time stretching or synthesized loops; independent native-triggered recordings finish naturally. Vorbis block encoding. Reflected-padding 2800 Hz low-pass; bounded static gain compensates filter energy loss toward 1.5 dB below the corresponding dry mono take, capped at 1.5. Playback uses natural speed (cancels native above pitch 0.5) and sheltered base volume. No dynamic compression.",
+    "output_sha256": "5d68b93a6a3bf9bb46e05308cf8122c290651f0d021bbfda472e34eaa28813ff",
+    "decoded_peak": 0.05735,
+    "decoded_rms_dbfs": -41.793,
+    "source_channels": 2,
+    "playback_pitch": 1.0,
+    "source_lowpass_hz": 2800
+  },
+  {
+    "source_project": "The Sound of Rain",
+    "source_author": "JShep",
+    "source_url": "https://modrinth.com/mod/the-sound-of-rain",
+    "declared_project_license": "MIT",
+    "license_verified_date": "2026-10-14",
+    "original_release_version": null,
+    "output": "assets/blocksidesound/sounds/weather/rain_above11.ogg",
+    "original_file": "rain11.ogg",
+    "original_sha256": "7ef0939e540fbab8324ab01b5894cabfcc6e4b0bd208863d5c51736f069ce98b",
+    "original_vorbis_comments": [
+      "ENCODER=REAPER"
+    ],
+    "original_seconds": 2.74,
+    "output_seconds": 2.74,
+    "channels": 1,
+    "sample_rate": 44100,
+    "source_gain": 1.18661073,
+    "processing": "Full original duration retained; stereo averaged to mono so native world position and distance attenuation actually spatialize. No cropping, concatenation, time stretching or synthesized loops; independent native-triggered recordings finish naturally. Vorbis block encoding. Reflected-padding 2800 Hz low-pass; bounded static gain compensates filter energy loss toward 1.5 dB below the corresponding dry mono take, capped at 1.5. Playback uses natural speed (cancels native above pitch 0.5) and sheltered base volume. No dynamic compression.",
+    "output_sha256": "9295e5946b894782aac404f4d9fd162c6e57b78a09df05c0c59cc6b130201518",
+    "decoded_peak": 0.055787,
+    "decoded_rms_dbfs": -41.649,
+    "source_channels": 2,
+    "playback_pitch": 1.0,
+    "source_lowpass_hz": 2800
+  },
+  {
+    "source_project": "The Sound of Rain",
+    "source_author": "JShep",
+    "source_url": "https://modrinth.com/mod/the-sound-of-rain",
+    "declared_project_license": "MIT",
+    "license_verified_date": "2026-10-14",
+    "original_release_version": null,
+    "output": "assets/blocksidesound/sounds/weather/rain_above12.ogg",
+    "original_file": "rain12.ogg",
+    "original_sha256": "9084c2e186adbc40ec092c5b087c715d003e32a6c442c738f5187be15f4fb039",
+    "original_vorbis_comments": [
+      "ENCODER=REAPER"
+    ],
+    "original_seconds": 2.19,
+    "output_seconds": 2.19,
+    "channels": 1,
+    "sample_rate": 44100,
+    "source_gain": 1.319702878,
+    "processing": "Full original duration retained; stereo averaged to mono so native world position and distance attenuation actually spatialize. No cropping, concatenation, time stretching or synthesized loops; independent native-triggered recordings finish naturally. Vorbis block encoding. Reflected-padding 2800 Hz low-pass; bounded static gain compensates filter energy loss toward 1.5 dB below the corresponding dry mono take, capped at 1.5. Playback uses natural speed (cancels native above pitch 0.5) and sheltered base volume. No dynamic compression.",
+    "output_sha256": "f39c21fa8d6a59d07a58d520bd9cf1906cb9f30c9aea5855281655345a7d7662",
+    "decoded_peak": 0.044019,
+    "decoded_rms_dbfs": -41.481,
+    "source_channels": 2,
+    "playback_pitch": 1.0,
+    "source_lowpass_hz": 2800
   }
 ]

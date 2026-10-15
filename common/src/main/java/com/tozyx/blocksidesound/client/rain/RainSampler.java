@@ -97,6 +97,10 @@ public final class RainSampler {
     public RainSurface revalidate(ClientLevel world, Vec3 listener, RainSurface cached) {
         if (settings == null || !settings.enabled || world.getRainLevel(1.0F) <= 0) return null;
         RainSurface current = inspect(world, listener, cached.block().getX(), cached.block().getZ(), ticks);
+        long key = ((long) cached.block().getX() << 32) | (cached.block().getZ() & 0xffffffffL);
+        // A removed/covered anchor must not remain a preferred stale candidate until the next scan pass.
+        if (current == null) surfaces.remove(key);
+        else surfaces.put(key, current);
         return current != null && current.block().equals(cached.block()) ? current : null;
     }
 

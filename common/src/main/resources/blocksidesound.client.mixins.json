@@ -6,7 +6,8 @@
   "client": [
     "MinecraftMixin",
     "SoundOptionsScreenMixin",
-    "SoundEngineMixin"
+    "SoundEngineMixin",
+    "AbstractSoundInstanceAccessor"
   ],
   "injectors": {
     "defaultRequire": 1
