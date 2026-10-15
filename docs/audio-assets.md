@@ -81,8 +81,8 @@ Cool-Rain 的 [sounds.json](https://github.com/Leclowndu93150/Cool-Rain/blob/mas
 
 每组取原文件编号 1–3：wood→木质、metal→金属、glass→玻璃、foliage→植被、sand→沙砾、water→水面、fabric→柔软、droplet→植物滴水。每组独立事件三个变体；背景/雷声/熔岩/紫水晶等没有导入。全部为单声道，定位声不需要原 Mod 作为依赖。
 
-使用可选作者工具 `scripts/prepare-rain-audio.py`：基于原录音能量选择 0.9 秒窗口（短滴水最长 0.5 秒）、4 ms 淡入、25 ms 淡出，保留采样率，重新编码 Vorbis。算法筛选未经过人工听感确认，没有把长录音自动变成物理单滴模拟。原 Vorbis 评论提取到清单，重新编码文件不保留这些评论字段。没有修改原项目资源。
+本批素材使用本地作者工具处理（工具不随仓库分发）：基于原录音能量选择 0.9 秒窗口（短滴水最长 0.5 秒）、4 ms 淡入、25 ms 淡出，保留采样率，重新编码 Vorbis。算法筛选未经过人工听感确认，没有把长录音自动变成物理单滴模拟。原 Vorbis 评论提取到清单，重新编码文件不保留这些评论字段。没有修改原项目资源。
 
-正常构建无需 Python、原项目或音频工具；处理后的 OGG 已作为共享资源保存。需要重新制作本批音频时，在独立 Python 环境安装 numpy 和 soundfile==0.13.1，再运行 `python scripts/prepare-rain-audio.py --source-dir /path/to/assets/soundofrain/sounds`。该工具会重新生成这批 24 个 OGG、sounds.json 和两个逐文件清单；补新材料时直接编辑资源，不要用工具覆盖已手工补充的清单。
+正常构建无需 Python、原项目或音频工具；处理后的 OGG 已作为共享资源保存。本地作者工具使用 numpy 和 soundfile==0.13.1，可重新生成这批 24 个 OGG、sounds.json 和两个逐文件清单。工具不随仓库分发；补新材料时直接编辑资源，避免覆盖已手工补充的清单。
 
 两个安装 jar 均包含 META-INF/licenses/the-sound-of-rain.txt（来源/署名/MIT 许可文本）及 blocksidesound-rain-audio-manifest.json（逐文件哈希与处理记录）。上游原始 jar 版本/版权年份未在提供的提取目录中记录，清单明确留空；不会编造版权声明。

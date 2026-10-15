@@ -16,9 +16,7 @@ work/
 .env.*
 !.env.example
 
-# Collaboration Markdown is versioned; keep only these four shared documents.
-/.collaboration/*
-!/.collaboration/AGENTS.md
-!/.collaboration/design.md
-!/.collaboration/development.md
-!/.collaboration/handoff.md
+# Private collaboration documents and local tools are synchronized separately.
+/.collaboration/
+/AGENTS.md
+/scripts/
