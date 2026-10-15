@@ -19,3 +19,15 @@ tasks.named('test') {
     workingDir = layout.buildDirectory.dir('test-run').get().asFile
     doFirst { workingDir.mkdirs() }
 }
+
+// Include the same project license and asset scope in both platform jars and sources.
+def projectLicenseFiles = ['LICENSE', 'NOTICE', 'MINECRAFT-EXCEPTION.txt', 'ASSETS_LICENSE.md']
+        .collect { rootProject.file(it) }
+
+tasks.named('processResources') {
+    from(projectLicenseFiles) { into 'META-INF/licenses' }
+}
+
+tasks.named('sourcesJar') {
+    from(projectLicenseFiles) { into 'META-INF/licenses' }
+}

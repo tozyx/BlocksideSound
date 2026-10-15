@@ -1,0 +1,24 @@
+BlocksideSound
+Copyright (C) 2026 tozyx
+https://github.com/tozyx/BlocksideSound
+
+Except where a file or third-party notice states otherwise, the original
+source code, build configuration and project documentation of BlocksideSound
+are licensed under the GNU General Public License, version 3 only
+(SPDX-License-Identifier: GPL-3.0-only).
+
+This program is free software: you can redistribute it and/or modify it under
+the terms of version 3 of the GNU General Public License as published by the
+Free Software Foundation.
+
+This program is distributed in the hope that it will be useful, but WITHOUT
+ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE. See LICENSE for the full license text.
+
+The copyright holder also grants the additional permission described in
+MINECRAFT-EXCEPTION.txt under section 7 of GPLv3.
+
+Audio and other third-party assets are not relicensed by this notice. Their
+scope and attribution are documented in ASSETS_LICENSE.md and the applicable
+third-party notices. Minecraft and mod loaders remain under their respective
+licenses; this project does not grant rights in their code or assets.

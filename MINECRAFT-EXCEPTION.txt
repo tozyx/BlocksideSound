@@ -1,0 +1,26 @@
+BlocksideSound Minecraft linking exception
+Additional permission under section 7 of GNU GPL version 3
+
+If you modify BlocksideSound, or any covered work, by linking or combining it
+with Minecraft: Java Edition, including the modifications needed to run the
+Fabric Loader, NeoForge or Quilt Loader, the copyright holder of
+BlocksideSound grants you additional permission to convey the resulting work.
+This permission also covers linking or combining the covered work with those
+mod loaders and the libraries they or Minecraft normally require to run.
+
+You must still comply with GNU GPL version 3 for all code covered by that
+license, including providing its Corresponding Source when required. This
+permission does not waive source-code obligations for BlocksideSound or
+modifications of its covered code, and does not grant a general exception
+for incorporating that code into unrelated proprietary software.
+
+This additional permission applies only to material whose copyright holder
+has granted it. It does not change the licenses of third-party code or audio,
+nor does it grant permission to distribute Minecraft, mod loaders or their
+libraries in violation of their own terms.
+
+You may remove this additional permission from your version as permitted by
+section 7 of GNU GPL version 3.
+
+Naming a mod loader here grants permission only; it is not a statement that
+BlocksideSound has been tested with or supports that loader.
