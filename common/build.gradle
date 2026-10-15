@@ -21,8 +21,7 @@ tasks.named('test') {
 }
 
 // Include the same project license and asset scope in both platform jars and sources.
-def projectLicenseFiles = ['LICENSE', 'MINECRAFT-EXCEPTION.txt', 'README.md']
-        .collect { rootProject.file(it) }
+def projectLicenseFiles = [rootProject.file('LICENSE')]
 
 tasks.named('processResources') {
     from(projectLicenseFiles) { into 'META-INF/licenses' }

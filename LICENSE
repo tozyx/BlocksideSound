@@ -1,3 +1,37 @@
+BlocksideSound
+Copyright (C) 2026 tozyx
+https://github.com/tozyx/BlocksideSound
+
+PROJECT LICENSE AND SCOPE
+
+Except where separately noted, the original source code, build configuration
+and project documentation are licensed under GNU GPL version 3 only
+(SPDX-License-Identifier: GPL-3.0-only), with the Minecraft linking additional
+permission reproduced after the unmodified GPL text below.
+You may redistribute and modify the covered work under those terms.
+It is provided without any warranty; see the full GPL text for details.
+
+Audio and other third-party assets retain their own licenses and attribution;
+this GPL grant and the Minecraft exception do not relicense those assets.
+The 24 bundled rain cues come from The Sound of Rain / JShep (upstream project
+MIT declaration checked on 2026-10-14). Original recording credits and remaining
+provenance gaps are documented in the existing audio notice and per-file
+manifest; preserve those records. No new upstream authorship or permission
+is asserted here.
+
+Reference audio under soundResource/ is not included in the mod jars; each
+file retains its upstream terms. Source-specific records include
+soundResource/cool-rain/README.source.md and SOURCE.json.
+Future original or AI-generated audio will have its rights and license
+recorded individually; no blanket new audio license is granted here.
+
+This combined LICENSE is included under META-INF/licenses/ in release and
+source jars, alongside the unchanged the-sound-of-rain.txt attribution and
+blocksidesound-rain-audio-manifest.json. In the repository, see
+common/src/main/resources/META-INF/licenses/ and docs/rain-audio-manifest.json.
+
+----- BEGIN UNMODIFIED GNU GPL VERSION 3 TEXT -----
+
 GNU GENERAL PUBLIC LICENSE
 Version 3, 29 June 2007
 
@@ -230,3 +264,33 @@ The hypothetical commands `show w' and `show c' should show the appropriate part
 You should also get your employer (if you work as a programmer) or school, if any, to sign a “copyright disclaimer” for the program, if necessary. For more information on this, and how to apply and follow the GNU GPL, see <https://www.gnu.org/licenses/>.
 
 The GNU General Public License does not permit incorporating your program into proprietary programs. If your program is a subroutine library, you may consider it more useful to permit linking proprietary applications with the library. If this is what you want to do, use the GNU Lesser General Public License instead of this License. But first, please read <https://www.gnu.org/philosophy/why-not-lgpl.html>.
+
+
+----- END GNU GPL VERSION 3 TEXT -----
+
+BlocksideSound Minecraft linking exception
+Additional permission under section 7 of GNU GPL version 3
+
+If you modify BlocksideSound, or any covered work, by linking or combining it
+with Minecraft: Java Edition, including the modifications needed to run the
+Fabric Loader, NeoForge or Quilt Loader, the copyright holder of
+BlocksideSound grants you additional permission to convey the resulting work.
+This permission also covers linking or combining the covered work with those
+mod loaders and the libraries they or Minecraft normally require to run.
+
+You must still comply with GNU GPL version 3 for all code covered by that
+license, including providing its Corresponding Source when required. This
+permission does not waive source-code obligations for BlocksideSound or
+modifications of its covered code, and does not grant a general exception
+for incorporating that code into unrelated proprietary software.
+
+This additional permission applies only to material whose copyright holder
+has granted it. It does not change the licenses of third-party code or audio,
+nor does it grant permission to distribute Minecraft, mod loaders or their
+libraries in violation of their own terms.
+
+You may remove this additional permission from your version as permitted by
+section 7 of GNU GPL version 3.
+
+Naming a mod loader here grants permission only; it is not a statement that
+BlocksideSound has been tested with or supports that loader.
