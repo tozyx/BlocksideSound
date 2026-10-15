@@ -17,6 +17,14 @@ Processed into short mono cues with fades and Vorbis re-encoding.
 The exact original names, hashes, author comments and crop positions are in
 META-INF/licenses/blocksidesound-rain-audio-manifest.json.
 
+Additional weather recordings supplied by the user on 2026-10-15:
+rain1.ogg, rain2.ogg, rain3.ogg combined into stereo background loops;
+thunder_sounds_close_1..3.ogg, thunder_sounds_medium_1..4.ogg,
+thunder_sounds_far_1..4.ogg converted to mono without shortening.
+Loop construction, filtering, gain, original comments/hashes and output hashes
+are preserved in the same manifest. The exact release remains unspecified.
+Original source files and REAPER peak caches are not included in the mod jar.
+
 Original recording comments include:
 Ivo Vicic — Rain on umbrella (Loop)
 Tomas Herudek — Rain on window ambience

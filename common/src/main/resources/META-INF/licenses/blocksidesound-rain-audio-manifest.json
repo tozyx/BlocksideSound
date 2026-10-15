@@ -547,5 +547,350 @@
     "sample_rate": 44100,
     "processing": "Energetic window; 4 ms fade in, 25 ms fade out; Vorbis re-encode. Original comments retained in this manifest.",
     "output_sha256": "6c4f8c066d9e345c96d33870e054746aaf2b5f96285e2424da3031c4e9eecddf"
+  },
+  {
+    "output": "assets/blocksidesound/sounds/weather/rain_loop.ogg",
+    "original_file": "rain1.ogg + rain2.ogg + rain3.ogg",
+    "source_project": "The Sound of Rain",
+    "source_author": "JShep",
+    "source_url": "https://modrinth.com/mod/the-sound-of-rain",
+    "declared_project_license": "MIT",
+    "license_verified_date": "2026-10-14",
+    "original_release_version": null,
+    "originals": [
+      {
+        "file": "rain1.ogg",
+        "sha256": "130b733556a55d2fa4529fbaf7de94afb7e388998615edccee2ca7825f6da207",
+        "vorbis_comments": []
+      },
+      {
+        "file": "rain2.ogg",
+        "sha256": "7d44aadbf5a08d8d88030b1df5cd143576f458e4b6f4b7b75998f1604da5c08d",
+        "vorbis_comments": []
+      },
+      {
+        "file": "rain3.ogg",
+        "sha256": "6aff9de8a07ed053322be843c955f955b814da2c90660f5ca98e49195dddff32",
+        "vorbis_comments": []
+      }
+    ],
+    "output_seconds": 6.95322,
+    "channels": 2,
+    "sample_rate": 44100,
+    "processing": "Stereo ambience from three uncut clips, circular 120 ms equal-power overlaps; linear gain 4.619783; Vorbis q5. Intended looping seam requires listening verification.",
+    "output_sha256": "25647459417e13ca23581266898585982e272bafb4e773598c637fa4724b4e52",
+    "decoded_peak": 0.72383
+  },
+  {
+    "output": "assets/blocksidesound/sounds/weather/rain_above_loop.ogg",
+    "original_file": "rain1.ogg + rain2.ogg + rain3.ogg",
+    "source_project": "The Sound of Rain",
+    "source_author": "JShep",
+    "source_url": "https://modrinth.com/mod/the-sound-of-rain",
+    "declared_project_license": "MIT",
+    "license_verified_date": "2026-10-14",
+    "original_release_version": null,
+    "originals": [
+      {
+        "file": "rain1.ogg",
+        "sha256": "130b733556a55d2fa4529fbaf7de94afb7e388998615edccee2ca7825f6da207",
+        "vorbis_comments": []
+      },
+      {
+        "file": "rain2.ogg",
+        "sha256": "7d44aadbf5a08d8d88030b1df5cd143576f458e4b6f4b7b75998f1604da5c08d",
+        "vorbis_comments": []
+      },
+      {
+        "file": "rain3.ogg",
+        "sha256": "6aff9de8a07ed053322be843c955f955b814da2c90660f5ca98e49195dddff32",
+        "vorbis_comments": []
+      }
+    ],
+    "output_seconds": 6.95322,
+    "channels": 2,
+    "sample_rate": 44100,
+    "processing": "Same circular stereo loop and gain 4.619783; 1800 Hz low-pass with wrapped filter padding, Vorbis q5. Controller applies sheltered gain separately.",
+    "output_sha256": "d3e289e181dfbbae51a741fed9c9b074c9fa139391e7e0808b651e7a9133512b",
+    "decoded_peak": 0.194634
+  },
+  {
+    "output": "assets/blocksidesound/sounds/weather/thunder_close_1.ogg",
+    "original_file": "thunder_sounds_close_1.ogg",
+    "source_project": "The Sound of Rain",
+    "source_author": "JShep",
+    "source_url": "https://modrinth.com/mod/the-sound-of-rain",
+    "declared_project_license": "MIT",
+    "license_verified_date": "2026-10-14",
+    "original_release_version": null,
+    "originals": [
+      {
+        "file": "thunder_sounds_close_1.ogg",
+        "sha256": "a497f9c3d75d924ea0c467ec6c28f5e0ec32950a0943807917cfc0f72892e56d",
+        "vorbis_comments": [
+          "ENCODER=REAPER"
+        ]
+      }
+    ],
+    "output_seconds": 9.540794,
+    "channels": 1,
+    "sample_rate": 44100,
+    "processing": "Full duration; mono 44100 Hz, linear gain 0.547844 to cap decoded source peaks; 2 ms attack/40 ms release, Vorbis q5. Distance group retained from supplied filename.",
+    "output_sha256": "c73d067516b5496508c71691f6d20064e061b11f1acfba904fc8833cf0541408",
+    "decoded_peak": 0.815551
+  },
+  {
+    "output": "assets/blocksidesound/sounds/weather/thunder_close_2.ogg",
+    "original_file": "thunder_sounds_close_2.ogg",
+    "source_project": "The Sound of Rain",
+    "source_author": "JShep",
+    "source_url": "https://modrinth.com/mod/the-sound-of-rain",
+    "declared_project_license": "MIT",
+    "license_verified_date": "2026-10-14",
+    "original_release_version": null,
+    "originals": [
+      {
+        "file": "thunder_sounds_close_2.ogg",
+        "sha256": "c0ea972e35a65cce92555b0e8f306d8d6e3412766b1248fbb50986802092aa61",
+        "vorbis_comments": [
+          "ENCODER=REAPER"
+        ]
+      }
+    ],
+    "output_seconds": 14.816485,
+    "channels": 1,
+    "sample_rate": 44100,
+    "processing": "Full duration; mono 44100 Hz, linear gain 0.508388 to cap decoded source peaks; 2 ms attack/40 ms release, Vorbis q5. Distance group retained from supplied filename.",
+    "output_sha256": "d0028a0a70b7074506ebc8eceb8aa698c1cb61d551df0d192d0d0a72e6d425d4",
+    "decoded_peak": 0.815998
+  },
+  {
+    "output": "assets/blocksidesound/sounds/weather/thunder_close_3.ogg",
+    "original_file": "thunder_sounds_close_3.ogg",
+    "source_project": "The Sound of Rain",
+    "source_author": "JShep",
+    "source_url": "https://modrinth.com/mod/the-sound-of-rain",
+    "declared_project_license": "MIT",
+    "license_verified_date": "2026-10-14",
+    "original_release_version": null,
+    "originals": [
+      {
+        "file": "thunder_sounds_close_3.ogg",
+        "sha256": "93200c8914791acef974872c1a50f0780ed9125349f73d80305e8d60dbec8f2c",
+        "vorbis_comments": [
+          "ENCODER=REAPER"
+        ]
+      }
+    ],
+    "output_seconds": 9.753379,
+    "channels": 1,
+    "sample_rate": 44100,
+    "processing": "Full duration; mono 44100 Hz, linear gain 0.529331 to cap decoded source peaks; 2 ms attack/40 ms release, Vorbis q5. Distance group retained from supplied filename.",
+    "output_sha256": "3fa1026943d97307a76ec824bfbb079c137c898287bd8bc05d53200c6355401f",
+    "decoded_peak": 0.829437
+  },
+  {
+    "output": "assets/blocksidesound/sounds/weather/thunder_far_1.ogg",
+    "original_file": "thunder_sounds_far_1.ogg",
+    "source_project": "The Sound of Rain",
+    "source_author": "JShep",
+    "source_url": "https://modrinth.com/mod/the-sound-of-rain",
+    "declared_project_license": "MIT",
+    "license_verified_date": "2026-10-14",
+    "original_release_version": null,
+    "originals": [
+      {
+        "file": "thunder_sounds_far_1.ogg",
+        "sha256": "245c1761ca25d1e9db80d3dda5af0d0215f8ce004c62f126e1bc672cb2f36bb2",
+        "vorbis_comments": [
+          "ENCODER=libsndfile"
+        ]
+      }
+    ],
+    "output_seconds": 19.455986,
+    "channels": 1,
+    "sample_rate": 44100,
+    "processing": "Full duration; mono 44100 Hz, linear gain 0.961727 to cap decoded source peaks; 2 ms attack/40 ms release, Vorbis q5. Distance group retained from supplied filename.",
+    "output_sha256": "462cb4d461767d97656fd753ff811ac0a77a8dbbc21ef8b4d713d858fd3a553b",
+    "decoded_peak": 0.80689
+  },
+  {
+    "output": "assets/blocksidesound/sounds/weather/thunder_far_2.ogg",
+    "original_file": "thunder_sounds_far_2.ogg",
+    "source_project": "The Sound of Rain",
+    "source_author": "JShep",
+    "source_url": "https://modrinth.com/mod/the-sound-of-rain",
+    "declared_project_license": "MIT",
+    "license_verified_date": "2026-10-14",
+    "original_release_version": null,
+    "originals": [
+      {
+        "file": "thunder_sounds_far_2.ogg",
+        "sha256": "ba3e10b7b3ebc2b9e5bc3497b1e600eabb32a3dfaf3f03cbae8c68fc32ac8602",
+        "vorbis_comments": [
+          "ENCODER=libsndfile"
+        ]
+      }
+    ],
+    "output_seconds": 14.756395,
+    "channels": 1,
+    "sample_rate": 44100,
+    "processing": "Full duration; mono 44100 Hz, linear gain 1.000000 to cap decoded source peaks; 2 ms attack/40 ms release, Vorbis q5. Distance group retained from supplied filename.",
+    "output_sha256": "4af436f2629c6e3436ad9a16051f5c57b57dc4a310ccadc33e1fd2728e67aeaa",
+    "decoded_peak": 0.22825
+  },
+  {
+    "output": "assets/blocksidesound/sounds/weather/thunder_far_3.ogg",
+    "original_file": "thunder_sounds_far_3.ogg",
+    "source_project": "The Sound of Rain",
+    "source_author": "JShep",
+    "source_url": "https://modrinth.com/mod/the-sound-of-rain",
+    "declared_project_license": "MIT",
+    "license_verified_date": "2026-10-14",
+    "original_release_version": null,
+    "originals": [
+      {
+        "file": "thunder_sounds_far_3.ogg",
+        "sha256": "f330fbd4a73806cfd4b1f88b4c47790907c5326c78270c75e63e2bfd687b660a",
+        "vorbis_comments": [
+          "ENCODER=libsndfile"
+        ]
+      }
+    ],
+    "output_seconds": 9.642789,
+    "channels": 1,
+    "sample_rate": 44100,
+    "processing": "Full duration; mono 44100 Hz, linear gain 1.000000 to cap decoded source peaks; 2 ms attack/40 ms release, Vorbis q5. Distance group retained from supplied filename.",
+    "output_sha256": "50ca1446028e17db889e294ac79bd707cde2c7f025e3deb9dfb9b0f53f34d00b",
+    "decoded_peak": 0.478548
+  },
+  {
+    "output": "assets/blocksidesound/sounds/weather/thunder_far_4.ogg",
+    "original_file": "thunder_sounds_far_4.ogg",
+    "source_project": "The Sound of Rain",
+    "source_author": "JShep",
+    "source_url": "https://modrinth.com/mod/the-sound-of-rain",
+    "declared_project_license": "MIT",
+    "license_verified_date": "2026-10-14",
+    "original_release_version": null,
+    "originals": [
+      {
+        "file": "thunder_sounds_far_4.ogg",
+        "sha256": "4f2f45a70e4d99d69dc5ca2c14e7879adb06e64899f9ca6be8f2e164b945a9bb",
+        "vorbis_comments": [
+          "ENCODER=libsndfile",
+          "DATE=2023-03-23"
+        ]
+      }
+    ],
+    "output_seconds": 7.0,
+    "channels": 1,
+    "sample_rate": 44100,
+    "processing": "Full duration; mono 44100 Hz, linear gain 1.000000 to cap decoded source peaks; 2 ms attack/40 ms release, Vorbis q5. Distance group retained from supplied filename.",
+    "output_sha256": "f5ef57eb3d532ffe3c269ba29955c41c6dbd39fdee9331dc86ef6945a12261ae",
+    "decoded_peak": 0.687644
+  },
+  {
+    "output": "assets/blocksidesound/sounds/weather/thunder_medium_1.ogg",
+    "original_file": "thunder_sounds_medium_1.ogg",
+    "source_project": "The Sound of Rain",
+    "source_author": "JShep",
+    "source_url": "https://modrinth.com/mod/the-sound-of-rain",
+    "declared_project_license": "MIT",
+    "license_verified_date": "2026-10-14",
+    "original_release_version": null,
+    "originals": [
+      {
+        "file": "thunder_sounds_medium_1.ogg",
+        "sha256": "fbf1c077bd5f92dfc74c73abc79faf87a23ddf248d5c521f7d47dc666144d1b4",
+        "vorbis_comments": [
+          "ENCODER=libsndfile",
+          "DATE=2023-03-23"
+        ]
+      }
+    ],
+    "output_seconds": 8.0,
+    "channels": 1,
+    "sample_rate": 44100,
+    "processing": "Full duration; mono 44100 Hz, linear gain 0.929561 to cap decoded source peaks; 2 ms attack/40 ms release, Vorbis q5. Distance group retained from supplied filename.",
+    "output_sha256": "02012881e4ec3bc5d8d687f14bda60b8fa102a1821a6fc38840cd6d11fe570ea",
+    "decoded_peak": 0.823123
+  },
+  {
+    "output": "assets/blocksidesound/sounds/weather/thunder_medium_2.ogg",
+    "original_file": "thunder_sounds_medium_2.ogg",
+    "source_project": "The Sound of Rain",
+    "source_author": "JShep",
+    "source_url": "https://modrinth.com/mod/the-sound-of-rain",
+    "declared_project_license": "MIT",
+    "license_verified_date": "2026-10-14",
+    "original_release_version": null,
+    "originals": [
+      {
+        "file": "thunder_sounds_medium_2.ogg",
+        "sha256": "b5ba5c7012729f0d76fbd72c3fa4a999a5c3f156c75ffe6b0e1339bb7fa68f63",
+        "vorbis_comments": [
+          "ENCODER=libsndfile",
+          "DATE=2023-03-23"
+        ]
+      }
+    ],
+    "output_seconds": 17.086168,
+    "channels": 1,
+    "sample_rate": 44100,
+    "processing": "Full duration; mono 44100 Hz, linear gain 0.792674 to cap decoded source peaks; 2 ms attack/40 ms release, Vorbis q5. Distance group retained from supplied filename.",
+    "output_sha256": "d2c991229294755d6862b40336cd82b857f78e3658cd344e9717a5b54671ea36",
+    "decoded_peak": 0.75503
+  },
+  {
+    "output": "assets/blocksidesound/sounds/weather/thunder_medium_3.ogg",
+    "original_file": "thunder_sounds_medium_3.ogg",
+    "source_project": "The Sound of Rain",
+    "source_author": "JShep",
+    "source_url": "https://modrinth.com/mod/the-sound-of-rain",
+    "declared_project_license": "MIT",
+    "license_verified_date": "2026-10-14",
+    "original_release_version": null,
+    "originals": [
+      {
+        "file": "thunder_sounds_medium_3.ogg",
+        "sha256": "f75fafadd371fe5bb1883f3c6cc38ac55c20bd5722a0b5fa824df52bef27f9af",
+        "vorbis_comments": [
+          "ENCODER=libsndfile",
+          "DATE=2023-03-23"
+        ]
+      }
+    ],
+    "output_seconds": 19.419433,
+    "channels": 1,
+    "sample_rate": 44100,
+    "processing": "Full duration; mono 44100 Hz, linear gain 0.811732 to cap decoded source peaks; 2 ms attack/40 ms release, Vorbis q5. Distance group retained from supplied filename.",
+    "output_sha256": "81b067d7bbdd85478391e85aa3d5c4d19119046820a222368fb1430c83df14bf",
+    "decoded_peak": 0.817162
+  },
+  {
+    "output": "assets/blocksidesound/sounds/weather/thunder_medium_4.ogg",
+    "original_file": "thunder_sounds_medium_4.ogg",
+    "source_project": "The Sound of Rain",
+    "source_author": "JShep",
+    "source_url": "https://modrinth.com/mod/the-sound-of-rain",
+    "declared_project_license": "MIT",
+    "license_verified_date": "2026-10-14",
+    "original_release_version": null,
+    "originals": [
+      {
+        "file": "thunder_sounds_medium_4.ogg",
+        "sha256": "d52c9b172508a5b7ae528630e10cb5465af91b86c7798ed6d1ea0f667c3beea0",
+        "vorbis_comments": [
+          "ENCODER=libsndfile"
+        ]
+      }
+    ],
+    "output_seconds": 25.263311,
+    "channels": 1,
+    "sample_rate": 44100,
+    "processing": "Full duration; mono 44100 Hz, linear gain 0.801529 to cap decoded source peaks; 2 ms attack/40 ms release, Vorbis q5. Distance group retained from supplied filename.",
+    "output_sha256": "b259299acbb33509e8a9e0129fe0de4a11c0663f5f5ca4a66b3d6501921f22fc",
+    "decoded_peak": 0.776732
   }
 ]

@@ -80,5 +80,7 @@
   "blocksidesound.material.water": "水面",
   "blocksidesound.material.soft": "柔软表面",
   "blocksidesound.material.vanilla": "仅原版",
-  "blocksidesound.material.plant_drip": "植物滴水"
+  "blocksidesound.material.plant_drip": "植物滴水",
+  "subtitles.blocksidesound.weather.rain": "雨声沙沙",
+  "subtitles.blocksidesound.weather.thunder": "雷声轰鸣"
 }

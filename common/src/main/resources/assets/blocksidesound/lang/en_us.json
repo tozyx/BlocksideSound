@@ -80,5 +80,7 @@
   "blocksidesound.material.water": "Water",
   "blocksidesound.material.soft": "Soft Surfaces",
   "blocksidesound.material.vanilla": "Vanilla Only",
-  "blocksidesound.material.plant_drip": "Plant Drips"
+  "blocksidesound.material.plant_drip": "Plant Drips",
+  "subtitles.blocksidesound.weather.rain": "Rain patters",
+  "subtitles.blocksidesound.weather.thunder": "Thunder rumbles"
 }

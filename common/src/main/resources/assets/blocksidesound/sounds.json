@@ -158,5 +158,99 @@
         "attenuation_distance": 16
       }
     ]
+  },
+  "weather.rain": {
+    "subtitle": "subtitles.blocksidesound.weather.rain",
+    "sounds": [
+      {
+        "name": "blocksidesound:weather/rain_loop",
+        "stream": true
+      }
+    ]
+  },
+  "weather.rain.above": {
+    "subtitle": "subtitles.blocksidesound.weather.rain",
+    "sounds": [
+      {
+        "name": "blocksidesound:weather/rain_above_loop",
+        "stream": true
+      }
+    ]
+  },
+  "weather.thunder.close": {
+    "subtitle": "subtitles.blocksidesound.weather.thunder",
+    "sounds": [
+      {
+        "name": "blocksidesound:weather/thunder_close_1",
+        "attenuation_distance": 256
+      },
+      {
+        "name": "blocksidesound:weather/thunder_close_2",
+        "attenuation_distance": 256
+      },
+      {
+        "name": "blocksidesound:weather/thunder_close_3",
+        "attenuation_distance": 256
+      }
+    ]
+  },
+  "weather.thunder.medium": {
+    "subtitle": "subtitles.blocksidesound.weather.thunder",
+    "sounds": [
+      {
+        "name": "blocksidesound:weather/thunder_medium_1",
+        "attenuation_distance": 256
+      },
+      {
+        "name": "blocksidesound:weather/thunder_medium_2",
+        "attenuation_distance": 256
+      },
+      {
+        "name": "blocksidesound:weather/thunder_medium_3",
+        "attenuation_distance": 256
+      },
+      {
+        "name": "blocksidesound:weather/thunder_medium_4",
+        "attenuation_distance": 256
+      }
+    ]
+  },
+  "weather.thunder.far": {
+    "subtitle": "subtitles.blocksidesound.weather.thunder",
+    "sounds": [
+      {
+        "name": "blocksidesound:weather/thunder_far_1",
+        "attenuation_distance": 256
+      },
+      {
+        "name": "blocksidesound:weather/thunder_far_2",
+        "attenuation_distance": 256
+      },
+      {
+        "name": "blocksidesound:weather/thunder_far_3",
+        "attenuation_distance": 256
+      },
+      {
+        "name": "blocksidesound:weather/thunder_far_4",
+        "attenuation_distance": 256
+      }
+    ]
+  },
+  "weather.thunder": {
+    "subtitle": "subtitles.blocksidesound.weather.thunder",
+    "sounds": [
+      {
+        "name": "blocksidesound:weather.thunder.close",
+        "type": "event"
+      },
+      {
+        "name": "blocksidesound:weather.thunder.medium",
+        "type": "event"
+      },
+      {
+        "name": "blocksidesound:weather.thunder.far",
+        "type": "event"
+      }
+    ]
   }
 }

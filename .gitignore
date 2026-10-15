@@ -25,3 +25,6 @@ work/
 /docs/*
 !/docs/rain-audio-manifest.json
 !/docs/TODO.md
+
+# Local audio-editor waveform caches.
+*.reapeaks
