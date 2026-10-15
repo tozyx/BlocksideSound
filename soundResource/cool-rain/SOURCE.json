@@ -1,0 +1,600 @@
+{
+  "repository": "https://github.com/Leclowndu93150/Cool-Rain",
+  "branch": "master",
+  "commit": "9424beff7b9329d0b48f1d434c4b717638970c51",
+  "sourceDirectory": "src/main/resources/assets/coolrain/sounds",
+  "downloadedAtUtc": "2026-10-15T01:30:24.368667+00:00",
+  "fileCount": 84,
+  "totalBytes": 4144239,
+  "processing": "Original files, no transcoding or renaming. Verified against upstream Git blob SHA-1.",
+  "files": [
+    {
+      "file": "rain_sounds_amethyst_1.ogg",
+      "upstreamPath": "src/main/resources/assets/coolrain/sounds/rain_sounds_amethyst_1.ogg",
+      "bytes": 15907,
+      "gitBlobSha1": "02aa8e46693cc3a15d7a1413a14b27cf007e4b99",
+      "sha256": "36a3eb20f85708109a27ca4ac9f735999232dc11aff2705e3a8b3db7475b601d"
+    },
+    {
+      "file": "rain_sounds_amethyst_2.ogg",
+      "upstreamPath": "src/main/resources/assets/coolrain/sounds/rain_sounds_amethyst_2.ogg",
+      "bytes": 16391,
+      "gitBlobSha1": "5aca1a5a000c6a75eaa99cbd2dc39596143b7961",
+      "sha256": "accb6d473dbfd2751b78f657e9f25bca0065e2de1c2208a9c228ce1123e139a8"
+    },
+    {
+      "file": "rain_sounds_amethyst_3.ogg",
+      "upstreamPath": "src/main/resources/assets/coolrain/sounds/rain_sounds_amethyst_3.ogg",
+      "bytes": 17793,
+      "gitBlobSha1": "b3f7caa885f74d29580b9ab2cbc717af9f8af15f",
+      "sha256": "f913425f1eef6696b0f833f10d629b956047cbadc7d368a313d4f996dd75759b"
+    },
+    {
+      "file": "rain_sounds_amethyst_4.ogg",
+      "upstreamPath": "src/main/resources/assets/coolrain/sounds/rain_sounds_amethyst_4.ogg",
+      "bytes": 36803,
+      "gitBlobSha1": "287297a3ecd7fb8daf2f4c0377d2419b5c18b4b9",
+      "sha256": "c3fe309c3d2ab5976aa73358697624747b221a6944d9046d1cf26675f9db3c9a"
+    },
+    {
+      "file": "rain_sounds_amethyst_5.ogg",
+      "upstreamPath": "src/main/resources/assets/coolrain/sounds/rain_sounds_amethyst_5.ogg",
+      "bytes": 12319,
+      "gitBlobSha1": "d8c8dd495fcba42f345c760c4f29d1c8ca5a2fdb",
+      "sha256": "56d4c497fc0c7ccecd09f51c309e0f0979f623274c9081c144b99a5dd3f61b19"
+    },
+    {
+      "file": "rain_sounds_amethyst_6.ogg",
+      "upstreamPath": "src/main/resources/assets/coolrain/sounds/rain_sounds_amethyst_6.ogg",
+      "bytes": 12519,
+      "gitBlobSha1": "794d3df4380b0a7610098d06386664d1e4746760",
+      "sha256": "5899811d5c18069795f8ff886e2878d15dc838eb6106bf917382cbc52a4b70bb"
+    },
+    {
+      "file": "rain_sounds_amethyst_7.ogg",
+      "upstreamPath": "src/main/resources/assets/coolrain/sounds/rain_sounds_amethyst_7.ogg",
+      "bytes": 11565,
+      "gitBlobSha1": "44c5e3fac8a7c26f0a48592adac022cc7824512c",
+      "sha256": "a7ed616b2f97b3e94f4f9edd16c8d62e6bd6d491aede06be0c17720e00b4e16f"
+    },
+    {
+      "file": "rain_sounds_fabric_1.ogg",
+      "upstreamPath": "src/main/resources/assets/coolrain/sounds/rain_sounds_fabric_1.ogg",
+      "bytes": 96215,
+      "gitBlobSha1": "27fb493670eb467e035a005f30a31f60213cf9f2",
+      "sha256": "233048926f7d544242c8c98bca84dbc839d818d1563ae4c63b1ba777268dc22e"
+    },
+    {
+      "file": "rain_sounds_fabric_2.ogg",
+      "upstreamPath": "src/main/resources/assets/coolrain/sounds/rain_sounds_fabric_2.ogg",
+      "bytes": 103475,
+      "gitBlobSha1": "b8457cf804d19e2f9bd82f12a71cfbc90faedbe9",
+      "sha256": "f9ba2c2fbedb1494219d2c729a81d481462c76c9335796ae4a6321c621172654"
+    },
+    {
+      "file": "rain_sounds_fabric_3.ogg",
+      "upstreamPath": "src/main/resources/assets/coolrain/sounds/rain_sounds_fabric_3.ogg",
+      "bytes": 124113,
+      "gitBlobSha1": "3680f93cd3372a6913b4f4702f0e92ce0ddebd21",
+      "sha256": "2508c87a30e908c63f4b09d7e8de8f570b28af9fe4f7c86c40417f392c257e67"
+    },
+    {
+      "file": "rain_sounds_fabric_4.ogg",
+      "upstreamPath": "src/main/resources/assets/coolrain/sounds/rain_sounds_fabric_4.ogg",
+      "bytes": 132074,
+      "gitBlobSha1": "5c094fcad3d7323a83bb215f55dce3cbec947d34",
+      "sha256": "fd5941e77003ff168b0fee94061322eacbca0ff9df5914291b2c5547929701aa"
+    },
+    {
+      "file": "rain_sounds_fabric_5.ogg",
+      "upstreamPath": "src/main/resources/assets/coolrain/sounds/rain_sounds_fabric_5.ogg",
+      "bytes": 105177,
+      "gitBlobSha1": "e4fc8fab81c761dfba169245cd8d7cfd2eceec90",
+      "sha256": "8406f3faf01250072ed5bc3ceabb954b01356b77d761559f4cf19e67e82dbb30"
+    },
+    {
+      "file": "rain_sounds_fabric_6.ogg",
+      "upstreamPath": "src/main/resources/assets/coolrain/sounds/rain_sounds_fabric_6.ogg",
+      "bytes": 92998,
+      "gitBlobSha1": "4336404b1aaad37964b7043c863e6da699aa37e7",
+      "sha256": "9a89d24ba5c782dabc14eabcfc459c1f40d9965514ed69d49c9b143769900e15"
+    },
+    {
+      "file": "rain_sounds_fabric_muffled_1.ogg",
+      "upstreamPath": "src/main/resources/assets/coolrain/sounds/rain_sounds_fabric_muffled_1.ogg",
+      "bytes": 70844,
+      "gitBlobSha1": "c2e6fea35e3bfcccb9c030c2a4a6977173d3d3af",
+      "sha256": "8e8c22e290eaade331168b872eadc346dca3b70b3babfc9eaca49df6cf207c4f"
+    },
+    {
+      "file": "rain_sounds_fabric_muffled_2.ogg",
+      "upstreamPath": "src/main/resources/assets/coolrain/sounds/rain_sounds_fabric_muffled_2.ogg",
+      "bytes": 71557,
+      "gitBlobSha1": "c9d6a600f6bca62e25011fe9bc4053d73ec08989",
+      "sha256": "92a4ab1a900e6ef2eb146b4eca9dc59b1016c02574b01558ec1f0fb31b8bc6e5"
+    },
+    {
+      "file": "rain_sounds_fabric_muffled_3.ogg",
+      "upstreamPath": "src/main/resources/assets/coolrain/sounds/rain_sounds_fabric_muffled_3.ogg",
+      "bytes": 86383,
+      "gitBlobSha1": "3d27a5ee4d9ae66ec462f3111f6ef49e096b3faf",
+      "sha256": "33216633a40a2b1f076d44080484a08da5f1be9ca194901674111147fdd46a78"
+    },
+    {
+      "file": "rain_sounds_fabric_muffled_4.ogg",
+      "upstreamPath": "src/main/resources/assets/coolrain/sounds/rain_sounds_fabric_muffled_4.ogg",
+      "bytes": 94097,
+      "gitBlobSha1": "5da275a5ae02939f628667af650f902e5ebcb24e",
+      "sha256": "ba5e51ddae66a6f1247c8b8a4b44e69999ef842c9213f9e3349380b16d301fa7"
+    },
+    {
+      "file": "rain_sounds_fabric_muffled_5.ogg",
+      "upstreamPath": "src/main/resources/assets/coolrain/sounds/rain_sounds_fabric_muffled_5.ogg",
+      "bytes": 72551,
+      "gitBlobSha1": "144234067d17a49ed3df6f1bf56b233a84c64ef6",
+      "sha256": "e89cea24eb23293158df381caa19aa9c37219d330ea439b5621d34c3217bd986"
+    },
+    {
+      "file": "rain_sounds_fabric_muffled_6.ogg",
+      "upstreamPath": "src/main/resources/assets/coolrain/sounds/rain_sounds_fabric_muffled_6.ogg",
+      "bytes": 64369,
+      "gitBlobSha1": "06ff48f87e0d20daec5fe3ce09f69aeb071b77af",
+      "sha256": "93707e64c50077150c3691d6c84d98313631862e88ad33f6512a799ee2beadb6"
+    },
+    {
+      "file": "rain_sounds_foliage_1.ogg",
+      "upstreamPath": "src/main/resources/assets/coolrain/sounds/rain_sounds_foliage_1.ogg",
+      "bytes": 85105,
+      "gitBlobSha1": "7d92f2f64e5b1c6d630aca6efb6636dac11cdbd9",
+      "sha256": "15909e45ae8429dfb9e39b9635c480992933d05ed0eacb0952bb84830aecc5e1"
+    },
+    {
+      "file": "rain_sounds_foliage_2.ogg",
+      "upstreamPath": "src/main/resources/assets/coolrain/sounds/rain_sounds_foliage_2.ogg",
+      "bytes": 86040,
+      "gitBlobSha1": "e572dfc5b34593e78839871e8a135045414204e3",
+      "sha256": "a9cb6eb5a0eb7108da3b532958eabc44d930d68a13874be46f0a1c2061f1a598"
+    },
+    {
+      "file": "rain_sounds_foliage_3.ogg",
+      "upstreamPath": "src/main/resources/assets/coolrain/sounds/rain_sounds_foliage_3.ogg",
+      "bytes": 87469,
+      "gitBlobSha1": "da5e99927484430880cde20d1c373d7d40ba0791",
+      "sha256": "d486f51b34cbf5ecd012994ba6802fdeac88ed22fc2f083216b1ca1df96e2a64"
+    },
+    {
+      "file": "rain_sounds_foliage_4.ogg",
+      "upstreamPath": "src/main/resources/assets/coolrain/sounds/rain_sounds_foliage_4.ogg",
+      "bytes": 88153,
+      "gitBlobSha1": "4a16a1276d6f9016627d417dae1780286088f609",
+      "sha256": "e1ee79d521b53aae7fea19eabc19ca13673a90d65412153f28aa0c10b909082b"
+    },
+    {
+      "file": "rain_sounds_foliage_5.ogg",
+      "upstreamPath": "src/main/resources/assets/coolrain/sounds/rain_sounds_foliage_5.ogg",
+      "bytes": 85898,
+      "gitBlobSha1": "14b90c40005acc97234350860ba6e38913d88a8e",
+      "sha256": "b6cb8e770cfc6e0ce5bdb33c01b1b13fafab4db09fae30a5b64b2316d75ea821"
+    },
+    {
+      "file": "rain_sounds_foliage_6.ogg",
+      "upstreamPath": "src/main/resources/assets/coolrain/sounds/rain_sounds_foliage_6.ogg",
+      "bytes": 87863,
+      "gitBlobSha1": "e5237e67103adb7e9f815977460ee8888f4e37e6",
+      "sha256": "c4164555af33274a52db484abdf48b8db3626a9f3beb37facaff0b0c04c20b59"
+    },
+    {
+      "file": "rain_sounds_glass_1.ogg",
+      "upstreamPath": "src/main/resources/assets/coolrain/sounds/rain_sounds_glass_1.ogg",
+      "bytes": 74967,
+      "gitBlobSha1": "4f279017f4940d03b0df39e1c3f65528951ce0bc",
+      "sha256": "1bd4a2ada1dd566b7a7ac6c11b2de5799f577e47a835162ce106951c0bce8cfe"
+    },
+    {
+      "file": "rain_sounds_glass_2.ogg",
+      "upstreamPath": "src/main/resources/assets/coolrain/sounds/rain_sounds_glass_2.ogg",
+      "bytes": 85278,
+      "gitBlobSha1": "6812bc6a332e3f87b0036bb64056acf5d8bed776",
+      "sha256": "f317457ee0e7fed1f3c90137e065899f1411b49f61e8d1c8f5ddd60b4dc89a97"
+    },
+    {
+      "file": "rain_sounds_glass_3.ogg",
+      "upstreamPath": "src/main/resources/assets/coolrain/sounds/rain_sounds_glass_3.ogg",
+      "bytes": 80305,
+      "gitBlobSha1": "4a875328d57a019d69d740ca995610a7ae1d8bef",
+      "sha256": "a2bfb329aa515b074a51a7e4c7e6ded7de9e8e09c76feb7364214076b44208e5"
+    },
+    {
+      "file": "rain_sounds_glass_4.ogg",
+      "upstreamPath": "src/main/resources/assets/coolrain/sounds/rain_sounds_glass_4.ogg",
+      "bytes": 83654,
+      "gitBlobSha1": "079fecd9c1db20981c0b1da75c3191d8891acec7",
+      "sha256": "e455495d478b726f8281cb906416ac514e9cec4fadd43b8bb34e7222b52e0dc6"
+    },
+    {
+      "file": "rain_sounds_glass_5.ogg",
+      "upstreamPath": "src/main/resources/assets/coolrain/sounds/rain_sounds_glass_5.ogg",
+      "bytes": 80571,
+      "gitBlobSha1": "3b0bf93f466ba2196d5e248ab08ba839b87cccd6",
+      "sha256": "ced0470292b0ae956307916c442902f2db621628fb81d2469356770c049129c1"
+    },
+    {
+      "file": "rain_sounds_glass_6.ogg",
+      "upstreamPath": "src/main/resources/assets/coolrain/sounds/rain_sounds_glass_6.ogg",
+      "bytes": 81368,
+      "gitBlobSha1": "3b6bce2f0180c09a3e8e059719d7d4c81031c324",
+      "sha256": "e00a7bb1de5092dd57caf2eddb57139881053b398b02f3119b885deffe21ac21"
+    },
+    {
+      "file": "rain_sounds_glass_muffled_1.ogg",
+      "upstreamPath": "src/main/resources/assets/coolrain/sounds/rain_sounds_glass_muffled_1.ogg",
+      "bytes": 63572,
+      "gitBlobSha1": "6ccb82900491df3dfb1d136f5cf9e53fb568a954",
+      "sha256": "50344f51c7006a145f92df695bade69d6d7346c35a8b2038b9a663f8f71e2904"
+    },
+    {
+      "file": "rain_sounds_glass_muffled_2.ogg",
+      "upstreamPath": "src/main/resources/assets/coolrain/sounds/rain_sounds_glass_muffled_2.ogg",
+      "bytes": 62176,
+      "gitBlobSha1": "77e785cbf0f873b3982c52d350d084d27fce7450",
+      "sha256": "6cf85593c9c187287e115c511bb3f16dae94174495b20442001c808f343689f2"
+    },
+    {
+      "file": "rain_sounds_glass_muffled_3.ogg",
+      "upstreamPath": "src/main/resources/assets/coolrain/sounds/rain_sounds_glass_muffled_3.ogg",
+      "bytes": 72507,
+      "gitBlobSha1": "96d3a63314a2b5a4b4fb281e7d3b65f632d09a71",
+      "sha256": "c164ee10afddc41d4993d3469990f88207e412677fa6ce2bf0aab9bc4901e127"
+    },
+    {
+      "file": "rain_sounds_glass_muffled_4.ogg",
+      "upstreamPath": "src/main/resources/assets/coolrain/sounds/rain_sounds_glass_muffled_4.ogg",
+      "bytes": 54049,
+      "gitBlobSha1": "ad3108853b9895e5b7265bbf724675916ab76569",
+      "sha256": "0aa59f7ff9cf900b7e135320229005cfbd4319240695c235ca9f7a978f72db4b"
+    },
+    {
+      "file": "rain_sounds_glass_muffled_5.ogg",
+      "upstreamPath": "src/main/resources/assets/coolrain/sounds/rain_sounds_glass_muffled_5.ogg",
+      "bytes": 67842,
+      "gitBlobSha1": "a85b042b195ac050bad56abc8796cc7fec7992c8",
+      "sha256": "7a6ee1f55d9f3ef265621fa2388a62b95f98aea292941eca49e48a12e15567de"
+    },
+    {
+      "file": "rain_sounds_glass_muffled_6.ogg",
+      "upstreamPath": "src/main/resources/assets/coolrain/sounds/rain_sounds_glass_muffled_6.ogg",
+      "bytes": 55352,
+      "gitBlobSha1": "857c036a9357945569c6442ad1b5ea4898a6745d",
+      "sha256": "ef47206dd5c20e1145618b10dc129ca05c72eb3fc4345ecdeae2876bbc1f21b6"
+    },
+    {
+      "file": "rain_sounds_lava_1.ogg",
+      "upstreamPath": "src/main/resources/assets/coolrain/sounds/rain_sounds_lava_1.ogg",
+      "bytes": 8234,
+      "gitBlobSha1": "a5bd5bd0bb0d65cb5e23cc83252c575abe9ea8ec",
+      "sha256": "ad7848a9a627362194c68d1db107a63172ac43ac0deccb4424311ad91f31aafa"
+    },
+    {
+      "file": "rain_sounds_lava_10.ogg",
+      "upstreamPath": "src/main/resources/assets/coolrain/sounds/rain_sounds_lava_10.ogg",
+      "bytes": 23920,
+      "gitBlobSha1": "f4aafdd24457f30e4e2a3f1c509bec23bdb8cfe9",
+      "sha256": "43c070d741abac730b667161b41806292c06ff1cf2276ce825eb1d23bc1577c2"
+    },
+    {
+      "file": "rain_sounds_lava_11.ogg",
+      "upstreamPath": "src/main/resources/assets/coolrain/sounds/rain_sounds_lava_11.ogg",
+      "bytes": 23005,
+      "gitBlobSha1": "5ffe4304071fe226b51e7f7f74f90daacdf92b17",
+      "sha256": "85e5e57da1327d20538826300a47bb77516081578b07005d56dc84527f170704"
+    },
+    {
+      "file": "rain_sounds_lava_12.ogg",
+      "upstreamPath": "src/main/resources/assets/coolrain/sounds/rain_sounds_lava_12.ogg",
+      "bytes": 17002,
+      "gitBlobSha1": "4beea2e04944aea477b4e9e91d3ca2e441f3f65d",
+      "sha256": "32c42c9c46b99b40191ab10dca9096ff7d7fc05f69276b418a4ae244f08e319e"
+    },
+    {
+      "file": "rain_sounds_lava_2.ogg",
+      "upstreamPath": "src/main/resources/assets/coolrain/sounds/rain_sounds_lava_2.ogg",
+      "bytes": 6796,
+      "gitBlobSha1": "651b3961da241068445af8231df456f2d7184a57",
+      "sha256": "c520d890de207f05be0bc075f7e104c45e5ceddd623116b3acaf47b5f23dfb3b"
+    },
+    {
+      "file": "rain_sounds_lava_3.ogg",
+      "upstreamPath": "src/main/resources/assets/coolrain/sounds/rain_sounds_lava_3.ogg",
+      "bytes": 6043,
+      "gitBlobSha1": "d4e25aa7041029e4874baaa9ec95bdc14d247ee3",
+      "sha256": "4292f0ff931c14702447c94cbeefa63c20fc306c7b2737f07db3172fea0bb7f8"
+    },
+    {
+      "file": "rain_sounds_lava_4.ogg",
+      "upstreamPath": "src/main/resources/assets/coolrain/sounds/rain_sounds_lava_4.ogg",
+      "bytes": 5211,
+      "gitBlobSha1": "165d523a00cb54790c79274102375baa2939caf5",
+      "sha256": "d4ec294336f4095c8ef49fec6a29beeab6da9dea037e018a598b425a03bfb012"
+    },
+    {
+      "file": "rain_sounds_lava_5.ogg",
+      "upstreamPath": "src/main/resources/assets/coolrain/sounds/rain_sounds_lava_5.ogg",
+      "bytes": 5477,
+      "gitBlobSha1": "41a7cd52bf828b5dbeca7dc6f56ea0e52955a5c9",
+      "sha256": "ad6758261c1464cee21f2b30aaeec50bb615d36c09f22b7f0998d81a9ad59a42"
+    },
+    {
+      "file": "rain_sounds_lava_6.ogg",
+      "upstreamPath": "src/main/resources/assets/coolrain/sounds/rain_sounds_lava_6.ogg",
+      "bytes": 5021,
+      "gitBlobSha1": "8ccf0003856aa3f4989addce2368b97c8fcefa6e",
+      "sha256": "37804c2a80d14c23612e217a17e6c47f9485f3641ab6dac3fe47733aef96be07"
+    },
+    {
+      "file": "rain_sounds_lava_7.ogg",
+      "upstreamPath": "src/main/resources/assets/coolrain/sounds/rain_sounds_lava_7.ogg",
+      "bytes": 11841,
+      "gitBlobSha1": "50f445a8e1cd8da263df0ec1b5d44437bd018064",
+      "sha256": "fd25c22a36606564d8d1e1803e4d93208fc4ce6da4ba2fbeb7b6d3653498e215"
+    },
+    {
+      "file": "rain_sounds_lava_8.ogg",
+      "upstreamPath": "src/main/resources/assets/coolrain/sounds/rain_sounds_lava_8.ogg",
+      "bytes": 20659,
+      "gitBlobSha1": "673fee57f1d42567d9f641d13b5a10dd2314748c",
+      "sha256": "3e9ed9e13a912496decf3c72645348206018c7ac28e0dd7438fcb81850b9bd66"
+    },
+    {
+      "file": "rain_sounds_lava_9.ogg",
+      "upstreamPath": "src/main/resources/assets/coolrain/sounds/rain_sounds_lava_9.ogg",
+      "bytes": 10120,
+      "gitBlobSha1": "74291d7aa6aabc0e1a552565e092c67a8b3109ae",
+      "sha256": "f118a4659c59823f475eda5f938cd485aed2636b8beea43077b7927ebd00c863"
+    },
+    {
+      "file": "rain_sounds_metal_1.ogg",
+      "upstreamPath": "src/main/resources/assets/coolrain/sounds/rain_sounds_metal_1.ogg",
+      "bytes": 37576,
+      "gitBlobSha1": "ccf532186650645b42ee2fe9d5c9c634e0190005",
+      "sha256": "0136b63e68468b20aa68bf24fd4d07ebae1dc2d5a67740843678ca68f19a1320"
+    },
+    {
+      "file": "rain_sounds_metal_10.ogg",
+      "upstreamPath": "src/main/resources/assets/coolrain/sounds/rain_sounds_metal_10.ogg",
+      "bytes": 112286,
+      "gitBlobSha1": "c1107004f315e09268d445afc8471ca85c721973",
+      "sha256": "1ddce2aa5dbee3ba268b7fc4f18bf24e26061e8f10d047591d6f2f5d59f67200"
+    },
+    {
+      "file": "rain_sounds_metal_2.ogg",
+      "upstreamPath": "src/main/resources/assets/coolrain/sounds/rain_sounds_metal_2.ogg",
+      "bytes": 36449,
+      "gitBlobSha1": "622108c578f04102d34fcc868d85db76e6cf180f",
+      "sha256": "5a6e178f3a34ec31fd398567a636db88d0bfb1c021e7ebd7681bee650fd8aa34"
+    },
+    {
+      "file": "rain_sounds_metal_3.ogg",
+      "upstreamPath": "src/main/resources/assets/coolrain/sounds/rain_sounds_metal_3.ogg",
+      "bytes": 35021,
+      "gitBlobSha1": "5663513b04ba4da5979b6fbbbecefb99aae3fe48",
+      "sha256": "2ec1c41df45942605b2bcfff86f0438aa5b7bf0715c8e4631a9de911fdd83986"
+    },
+    {
+      "file": "rain_sounds_metal_4.ogg",
+      "upstreamPath": "src/main/resources/assets/coolrain/sounds/rain_sounds_metal_4.ogg",
+      "bytes": 40617,
+      "gitBlobSha1": "33d047f258189c8f0e5bde98fa7e2870717551ee",
+      "sha256": "96d34f66bc38a115250d378df66b32c420d3c7314f0cfebfcec3a1efc8a2a102"
+    },
+    {
+      "file": "rain_sounds_metal_5.ogg",
+      "upstreamPath": "src/main/resources/assets/coolrain/sounds/rain_sounds_metal_5.ogg",
+      "bytes": 39615,
+      "gitBlobSha1": "209ce2cfced6f23ffab26e0d1657c72bd816200c",
+      "sha256": "991bc15069198516e1927a93e456c0ebbfb7cbbca067f4ce6b1fde84d8693244"
+    },
+    {
+      "file": "rain_sounds_metal_6.ogg",
+      "upstreamPath": "src/main/resources/assets/coolrain/sounds/rain_sounds_metal_6.ogg",
+      "bytes": 138502,
+      "gitBlobSha1": "10bb1b25676c25f4f191030a6575eecc2ed0f6bd",
+      "sha256": "b9cca619f0d2801ccb86ce8ff2516592967fb39dd1a36fb2000e897a467eaa8d"
+    },
+    {
+      "file": "rain_sounds_metal_7.ogg",
+      "upstreamPath": "src/main/resources/assets/coolrain/sounds/rain_sounds_metal_7.ogg",
+      "bytes": 99618,
+      "gitBlobSha1": "24b4937047d0a47d57f06d437475c2adb0d40669",
+      "sha256": "da679ef5f4e5a0eb04ceb3eb8776dba3eca321c2da2db5761a91071212f0da0a"
+    },
+    {
+      "file": "rain_sounds_metal_8.ogg",
+      "upstreamPath": "src/main/resources/assets/coolrain/sounds/rain_sounds_metal_8.ogg",
+      "bytes": 58874,
+      "gitBlobSha1": "712187463c3b50722f04f9b7601b9871acdafbb9",
+      "sha256": "50c2c5408cbbd535d5a47f0bae114bf642a4240d49cc977a41e552a42e2a76b9"
+    },
+    {
+      "file": "rain_sounds_metal_9.ogg",
+      "upstreamPath": "src/main/resources/assets/coolrain/sounds/rain_sounds_metal_9.ogg",
+      "bytes": 56917,
+      "gitBlobSha1": "598714d7e47f041a6effa028699d8a7cdbbf33da",
+      "sha256": "3fa8d833ea4e40291f15eb5cf2aeebf504e08c8a1ac887a9a1c07edb50b75ea9"
+    },
+    {
+      "file": "rain_sounds_metal_muffled_1.ogg",
+      "upstreamPath": "src/main/resources/assets/coolrain/sounds/rain_sounds_metal_muffled_1.ogg",
+      "bytes": 58147,
+      "gitBlobSha1": "f71696a4036d66aad73ab59ba5a609a81daa9876",
+      "sha256": "f2ebfdf54ef7e28336b55473bf78f21ac99a3390c5c73c909d43ec08c7d1f4ff"
+    },
+    {
+      "file": "rain_sounds_metal_muffled_2.ogg",
+      "upstreamPath": "src/main/resources/assets/coolrain/sounds/rain_sounds_metal_muffled_2.ogg",
+      "bytes": 63185,
+      "gitBlobSha1": "535e32112cedf624a529c48d545e1c4728c6350f",
+      "sha256": "a18c36f29cca08d77352fecd5d7cac059bbb92aa66d9332befcc216ed442d6ec"
+    },
+    {
+      "file": "rain_sounds_metal_muffled_3.ogg",
+      "upstreamPath": "src/main/resources/assets/coolrain/sounds/rain_sounds_metal_muffled_3.ogg",
+      "bytes": 72048,
+      "gitBlobSha1": "bdf3501a62757c8c6eb8ff34027eef1d1486cabb",
+      "sha256": "822350d305c054e0dd33650ce976a5bee2aa7a4ffd5d85ca0633411e16222cc0"
+    },
+    {
+      "file": "rain_sounds_noteblock_1.ogg",
+      "upstreamPath": "src/main/resources/assets/coolrain/sounds/rain_sounds_noteblock_1.ogg",
+      "bytes": 11033,
+      "gitBlobSha1": "30a43be2bb0afc480b028aa9d3c4b38293eabcee",
+      "sha256": "0ddfde873845dbb54f20008b67ce9fec970120903195d6bcad010e9d33c13ad7"
+    },
+    {
+      "file": "rain_sounds_noteblock_10.ogg",
+      "upstreamPath": "src/main/resources/assets/coolrain/sounds/rain_sounds_noteblock_10.ogg",
+      "bytes": 11451,
+      "gitBlobSha1": "2a2fa287212763ec8ba3aeea3c8660de5f835d98",
+      "sha256": "053699ceee2fe0622629510b18a91f4b12b5318d7b8eff1236012cfa4d2ae1de"
+    },
+    {
+      "file": "rain_sounds_noteblock_11.ogg",
+      "upstreamPath": "src/main/resources/assets/coolrain/sounds/rain_sounds_noteblock_11.ogg",
+      "bytes": 10793,
+      "gitBlobSha1": "a558094f0201fb61cc19d371a784f01ed7041ce1",
+      "sha256": "ca0fc8b0fde5bdb1d475bf0052d64c61907df9d8c1c1ad44d3501857c309e028"
+    },
+    {
+      "file": "rain_sounds_noteblock_12.ogg",
+      "upstreamPath": "src/main/resources/assets/coolrain/sounds/rain_sounds_noteblock_12.ogg",
+      "bytes": 12772,
+      "gitBlobSha1": "78101b09998019eee232051d66501eaf72468d82",
+      "sha256": "45a4e0d2ad57d6a39990df267bd2771b2a67d2a6b4141435d14589fecd8341bb"
+    },
+    {
+      "file": "rain_sounds_noteblock_13.ogg",
+      "upstreamPath": "src/main/resources/assets/coolrain/sounds/rain_sounds_noteblock_13.ogg",
+      "bytes": 12029,
+      "gitBlobSha1": "6beee8a16ca43eeb56d022820116358fd4815c49",
+      "sha256": "a0dcfbdda9b646e5791dfe1c5eba3558f09111903f53883ff483deae27f4e9e1"
+    },
+    {
+      "file": "rain_sounds_noteblock_14.ogg",
+      "upstreamPath": "src/main/resources/assets/coolrain/sounds/rain_sounds_noteblock_14.ogg",
+      "bytes": 11775,
+      "gitBlobSha1": "c431af3c19faf939b05445ad53a664b6b426f790",
+      "sha256": "e7bb9216e139eaf23b9344599fe1a71276ece415ed539f3ae013525ec405be65"
+    },
+    {
+      "file": "rain_sounds_noteblock_15.ogg",
+      "upstreamPath": "src/main/resources/assets/coolrain/sounds/rain_sounds_noteblock_15.ogg",
+      "bytes": 5817,
+      "gitBlobSha1": "1b23a740214f7b170979b0dc0880949f16383728",
+      "sha256": "b20b94eff58ee8a999dd4ac947e01bcc60b8f9b6cf5006fde1f9baa0c6abb8fd"
+    },
+    {
+      "file": "rain_sounds_noteblock_16.ogg",
+      "upstreamPath": "src/main/resources/assets/coolrain/sounds/rain_sounds_noteblock_16.ogg",
+      "bytes": 5699,
+      "gitBlobSha1": "30049fe4c6fb40655ef3ce3e56c04a6f208845a8",
+      "sha256": "cf84a197550980b95cc2740e19f82e682e2bd2557509cad17932efd3f977c60a"
+    },
+    {
+      "file": "rain_sounds_noteblock_2.ogg",
+      "upstreamPath": "src/main/resources/assets/coolrain/sounds/rain_sounds_noteblock_2.ogg",
+      "bytes": 11390,
+      "gitBlobSha1": "a5929a7055ead201a30d59a72c5507ee14136a2c",
+      "sha256": "dfee17feb7448e1c77aad94def2fd754d73105d538bec90885a2448651fb8f2e"
+    },
+    {
+      "file": "rain_sounds_noteblock_3.ogg",
+      "upstreamPath": "src/main/resources/assets/coolrain/sounds/rain_sounds_noteblock_3.ogg",
+      "bytes": 11906,
+      "gitBlobSha1": "ae4db6d3e300f8d8e56a4d8736bff8c385d71959",
+      "sha256": "1c5aa109b428bb19c4292ede4ebdbea971abb09ada911910cdf25ce265ba118e"
+    },
+    {
+      "file": "rain_sounds_noteblock_4.ogg",
+      "upstreamPath": "src/main/resources/assets/coolrain/sounds/rain_sounds_noteblock_4.ogg",
+      "bytes": 11607,
+      "gitBlobSha1": "e52cc67a3f890bd4743895e0af4cce9e4e37ae2d",
+      "sha256": "1dbfba87b22a61ae1a04e81a55bdd5919b02feb5249407506c126e5620cdc667"
+    },
+    {
+      "file": "rain_sounds_noteblock_5.ogg",
+      "upstreamPath": "src/main/resources/assets/coolrain/sounds/rain_sounds_noteblock_5.ogg",
+      "bytes": 11184,
+      "gitBlobSha1": "fb57fa00de9b733c1e2728bcca5907210ce9cb1c",
+      "sha256": "a31d44244e722c5d1ed9d8748ad4b746e69f8d3edf527c14623bcc19d58edefb"
+    },
+    {
+      "file": "rain_sounds_noteblock_6.ogg",
+      "upstreamPath": "src/main/resources/assets/coolrain/sounds/rain_sounds_noteblock_6.ogg",
+      "bytes": 10212,
+      "gitBlobSha1": "cce7125c05ddc0e91b5eefff0b97f25e37dd368b",
+      "sha256": "da6794d952254a41cc952e2bcebebc775c1a329cf45d6ac22bdd2de49ff19760"
+    },
+    {
+      "file": "rain_sounds_noteblock_7.ogg",
+      "upstreamPath": "src/main/resources/assets/coolrain/sounds/rain_sounds_noteblock_7.ogg",
+      "bytes": 9783,
+      "gitBlobSha1": "5922e41d26430e138aa78d1d8e0d35915f7247bb",
+      "sha256": "0e7367a9da5d84552d8ede0baa34a3a307ed4e9ce190a7a5b9194d821ef73c67"
+    },
+    {
+      "file": "rain_sounds_noteblock_8.ogg",
+      "upstreamPath": "src/main/resources/assets/coolrain/sounds/rain_sounds_noteblock_8.ogg",
+      "bytes": 9439,
+      "gitBlobSha1": "641f45716d01ef9f298c42edc06eb25debfe6084",
+      "sha256": "8d462ed0cd6cf64ce8f4b86f4f5eb5257facac94ef24a01466e6345515d361da"
+    },
+    {
+      "file": "rain_sounds_noteblock_9.ogg",
+      "upstreamPath": "src/main/resources/assets/coolrain/sounds/rain_sounds_noteblock_9.ogg",
+      "bytes": 11966,
+      "gitBlobSha1": "542968179831fb84205d4218cdad7d3924836914",
+      "sha256": "9a1e5547edd34d69c2678e4a3ede14b2db4c77f8efe084299cbbb144229907fb"
+    },
+    {
+      "file": "rain_sounds_water_1.ogg",
+      "upstreamPath": "src/main/resources/assets/coolrain/sounds/rain_sounds_water_1.ogg",
+      "bytes": 55112,
+      "gitBlobSha1": "179e096f2a6e5eb2134eebcd317ea4a8d7c505a9",
+      "sha256": "601a4bda18371c803bcdf6904eea6cea37085b6e7ef43d7dfaa712442acb172d"
+    },
+    {
+      "file": "rain_sounds_water_2.ogg",
+      "upstreamPath": "src/main/resources/assets/coolrain/sounds/rain_sounds_water_2.ogg",
+      "bytes": 60598,
+      "gitBlobSha1": "81ebd9a3c28f0596162d4782a116224b1a80e1df",
+      "sha256": "2c269cc570bd38bebc1728f5d4749d7908c978ef76f33bb300476be6dee90ecc"
+    },
+    {
+      "file": "rain_sounds_water_3.ogg",
+      "upstreamPath": "src/main/resources/assets/coolrain/sounds/rain_sounds_water_3.ogg",
+      "bytes": 60138,
+      "gitBlobSha1": "ebe78fa3e607d43b6d40ff4ee05df0bcfbb0aac7",
+      "sha256": "611666ff6ab4e009e5bc9049e5bdae088e731da8b0cad894fb427a8fbb31cdb8"
+    },
+    {
+      "file": "rain_sounds_water_4.ogg",
+      "upstreamPath": "src/main/resources/assets/coolrain/sounds/rain_sounds_water_4.ogg",
+      "bytes": 64319,
+      "gitBlobSha1": "25920f05dc842c4d9d07ac4578320fe4bfe66048",
+      "sha256": "42639eb55885483ae7559459a98e8d2bd68fd2973cb86aa0c463b19d291548ba"
+    },
+    {
+      "file": "rain_sounds_water_5.ogg",
+      "upstreamPath": "src/main/resources/assets/coolrain/sounds/rain_sounds_water_5.ogg",
+      "bytes": 66583,
+      "gitBlobSha1": "dc8473252abe2a8005dee8c45be7c3c3a5570b9e",
+      "sha256": "eec4b45c44210a488cf771cf7b913e1e5d2babdd5c213af0197eb97d1ffa6555"
+    },
+    {
+      "file": "rain_sounds_water_6.ogg",
+      "upstreamPath": "src/main/resources/assets/coolrain/sounds/rain_sounds_water_6.ogg",
+      "bytes": 57130,
+      "gitBlobSha1": "ea238f88b169c0824e29ae8b520a5bf20a28d1b3",
+      "sha256": "5268c36e2ef9724cf831eb2db6224e0e304e79ee27d7bc81697fdff9d76c69f2"
+    }
+  ]
+}

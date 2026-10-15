@@ -2,6 +2,8 @@ package com.tozyx.blocksidesound.client;
 
 import com.tozyx.blocksidesound.BlocksideSound;
 import com.tozyx.blocksidesound.client.config.ConfigStore;
+import com.tozyx.blocksidesound.client.config.SoundConfig;
+import java.io.IOException;
 import com.tozyx.blocksidesound.client.rain.RainPlayer;
 import com.tozyx.blocksidesound.client.rain.RainSampler;
 import java.nio.file.Path;
@@ -29,9 +31,21 @@ public final class BlocksideSoundClient {
         RAIN.configure(config.current().rain);
     }
 
+    public static SoundConfig configSnapshot() {
+        return config == null ? new SoundConfig() : config.snapshot();
+    }
+
+    /** Write successfully before replacing live settings or clearing any active sounds. */
+    public static void saveConfig(SoundConfig draft) throws IOException {
+        if (config == null) throw new IOException("Client configuration is not initialized");
+        config.save(draft);
+        PLAYER.clear(Minecraft.getInstance().getSoundManager());
+        RAIN.configure(config.current().rain);
+    }
+
     public static void tick(Minecraft minecraft) {
         if (config == null) return;
-        if (minecraft.level == null || minecraft.player == null) {
+        if (!config.current().enabled || minecraft.level == null || minecraft.player == null) {
             RAIN.clear();
             PLAYER.clear(minecraft.getSoundManager());
             return;

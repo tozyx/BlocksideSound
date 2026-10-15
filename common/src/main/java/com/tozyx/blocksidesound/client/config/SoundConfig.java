@@ -6,9 +6,10 @@ import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 
-/** Shared configuration model for file editing and the future settings screen. */
+/** Shared configuration model for file editing and the vanilla settings screen. */
 public final class SoundConfig {
     public int schemaVersion = 1;
+    public boolean enabled = true;
     public double volume = 1.0;
     public Rain rain = new Rain();
 

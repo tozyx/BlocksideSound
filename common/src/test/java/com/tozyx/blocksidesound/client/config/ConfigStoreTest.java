@@ -23,6 +23,71 @@ class ConfigStoreTest {
         assertEquals(10, reloaded.current().rain.materials.size());
     }
 
+    @Test void editingSnapshotDoesNotMutateLiveSettingsOrFile() throws Exception {
+        ConfigStore store = new ConfigStore(directory);
+        assertTrue(store.reload());
+        String original = Files.readString(directory.resolve("blocksidesound-client.json"));
+        SoundConfig draft = store.snapshot();
+        draft.enabled = false;
+        draft.rain.materials.get("wood").exclude.add("minecraft:oak_planks");
+        SoundConfig.Override rule = new SoundConfig.Override();
+        rule.match = "#minecraft:logs";
+        rule.material = "metal";
+        draft.rain.overrides.add(rule);
+        assertTrue(store.current().enabled);
+        assertTrue(store.current().rain.materials.get("wood").exclude.isEmpty());
+        assertTrue(store.current().rain.overrides.isEmpty());
+        assertEquals(original, Files.readString(directory.resolve("blocksidesound-client.json")));
+    }
+
+    @Test void savingDraftDetachesAllNestedSettings() throws Exception {
+        ConfigStore store = new ConfigStore(directory);
+        assertTrue(store.reload());
+        SoundConfig draft = store.snapshot();
+        draft.enabled = false;
+        draft.rain.plantDrips.exclude.add("#minecraft:leaves");
+        SoundConfig.Override rule = new SoundConfig.Override();
+        rule.match = "minecraft:glass";
+        rule.material = "metal";
+        draft.rain.overrides.add(rule);
+        store.save(draft);
+        draft.enabled = true;
+        draft.rain.plantDrips.exclude.clear();
+        rule.material = "wood";
+        assertFalse(store.current().enabled);
+        assertEquals(1, store.current().rain.plantDrips.exclude.size());
+        assertEquals("metal", store.current().rain.overrides.getFirst().material);
+        ConfigStore reloaded = new ConfigStore(directory);
+        assertTrue(reloaded.reload());
+        assertFalse(reloaded.current().enabled);
+        assertEquals("metal", reloaded.current().rain.overrides.getFirst().material);
+    }
+
+    @Test void failedSaveKeepsActiveConfiguration() throws Exception {
+        ConfigStore store = new ConfigStore(directory);
+        assertTrue(store.reload());
+        SoundConfig draft = store.snapshot();
+        draft.enabled = false;
+        Path file = directory.resolve("blocksidesound-client.json");
+        Files.delete(file);
+        Files.createDirectory(file);
+        Files.writeString(file.resolve("keep.txt"), "occupied");
+        assertThrows(java.io.IOException.class, () -> store.save(draft));
+        assertTrue(store.current().enabled);
+        assertEquals("occupied", Files.readString(file.resolve("keep.txt")));
+        try (var files = Files.list(directory)) {
+            assertFalse(files.anyMatch(path -> path.toString().endsWith(".tmp")));
+        }
+    }
+
+    @Test void oldSchemaWithoutMasterSwitchRemainsEnabled() throws Exception {
+        Files.writeString(directory.resolve("blocksidesound-client.json"), "{\"volume\":0.6}");
+        ConfigStore store = new ConfigStore(directory);
+        assertTrue(store.reload());
+        assertTrue(store.current().enabled);
+        assertEquals(0.6, store.current().volume);
+    }
+
     @Test void malformedFileKeepsPreviousConfigAndOriginalBytes() throws Exception {
         ConfigStore store = new ConfigStore(directory);
         assertTrue(store.reload());

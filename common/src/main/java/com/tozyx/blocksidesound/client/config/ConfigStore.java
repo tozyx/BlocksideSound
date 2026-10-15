@@ -26,6 +26,15 @@ public final class ConfigStore {
         return current;
     }
 
+    /** A detached editing copy: cancelling a screen must never change live settings. */
+    public SoundConfig snapshot() {
+        return copyOf(current);
+    }
+
+    private static SoundConfig copyOf(SoundConfig config) {
+        return GSON.fromJson(GSON.toJson(config), SoundConfig.class);
+    }
+
     public boolean reload() {
         Path source = path;
         try {
@@ -51,17 +60,18 @@ public final class ConfigStore {
     }
 
     public void save(SoundConfig config) throws IOException {
-        config.validate();
+        SoundConfig saved = copyOf(config);
+        saved.validate();
         Files.createDirectories(path.getParent());
         Path temporary = Files.createTempFile(path.getParent(), "blocksidesound-", ".tmp");
         try {
-            Files.writeString(temporary, GSON.toJson(config) + "\n", StandardCharsets.UTF_8);
+            Files.writeString(temporary, GSON.toJson(saved) + "\n", StandardCharsets.UTF_8);
             try {
                 Files.move(temporary, path, StandardCopyOption.REPLACE_EXISTING, StandardCopyOption.ATOMIC_MOVE);
             } catch (AtomicMoveNotSupportedException exception) {
                 Files.move(temporary, path, StandardCopyOption.REPLACE_EXISTING);
             }
-            current = config;
+            current = saved;
         } finally {
             Files.deleteIfExists(temporary);
         }

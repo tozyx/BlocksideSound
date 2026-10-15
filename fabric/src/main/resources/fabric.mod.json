@@ -4,17 +4,24 @@
   "version": "${version}",
   "name": "BlocksideSound",
   "description": "Material-aware rain and carefully designed sound details for Minecraft.",
-  "authors": ["tozyx"],
+  "authors": [
+    "tozyx"
+  ],
   "contact": {
     "sources": "https://github.com/tozyx/BlocksideSound",
     "issues": "https://github.com/tozyx/BlocksideSound/issues"
   },
   "license": "All Rights Reserved",
   "environment": "client",
-  "mixins": ["blocksidesound.client.mixins.json"],
+  "mixins": [
+    "blocksidesound.client.mixins.json"
+  ],
   "entrypoints": {
     "client": [
       "com.tozyx.blocksidesound.fabric.BlocksideSoundFabricClient"
+    ],
+    "modmenu": [
+      "com.tozyx.blocksidesound.fabric.BlocksideSoundModMenu"
     ]
   },
   "depends": {

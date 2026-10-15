@@ -20,3 +20,8 @@ work/
 /.collaboration/
 /AGENTS.md
 /scripts/
+
+# docs
+/docs/*
+!/docs/rain-audio-manifest.json
+!/docs/TODO.md

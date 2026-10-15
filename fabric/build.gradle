@@ -22,7 +22,10 @@ dependencies {
     common(project(path: ':common', configuration: 'namedElements')) { transitive = false }
     shadowCommon(project(path: ':common', configuration: 'transformProductionFabric')) { transitive = false }
 
-    // Local development runtime only: no compile API, publication or jar inclusion.
+    // Optional settings entrypoint API only; never bundled or required at runtime.
+    modCompileOnly('com.terraformersmc:modmenu:11.0.3') { transitive = false }
+
+    // Local development runtime only: no publication or jar inclusion.
     if (rootProject.enable_dev_mods.toBoolean()) {
         modLocalRuntime 'com.terraformersmc:modmenu:11.0.3'
         modLocalRuntime 'net.fabricmc.fabric-api:fabric-api:0.116.6+1.21.1'

@@ -4,7 +4,10 @@
   "package": "com.tozyx.blocksidesound.client.mixin",
   "compatibilityLevel": "JAVA_21",
   "client": [
-    "MinecraftMixin"
+    "MinecraftMixin",
+    "SoundOptionsScreenMixin"
   ],
-  "injectors": {"defaultRequire": 1}
+  "injectors": {
+    "defaultRequire": 1
+  }
 }
